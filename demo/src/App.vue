@@ -1,6 +1,6 @@
 <template>
   <div class="v-app" style="flex-direction:column;" :style="{height:appHeight}">
-    <u-header v-if="$route.path!=='/'">
+    <u-header style="background-color:#35495e;" v-if="$route.path!=='/'">
       <v-icon slot="left" color="#fff" @click="$router.go(-1)">&#xe621;</v-icon>{{$store.getters.title}}<v-icon slot="right" color="#fff" @click="copy">&#xe666;</v-icon>
     </u-header>
     <!-- <scroller style="flex:1;"> -->

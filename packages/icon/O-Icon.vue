@@ -1,5 +1,5 @@
 <template>
-  <text 
+  <text
   :style="{color:color,'font-size':size + `px`}"
     class="title2">{{getFontName}}</text>
 </template>
@@ -11,7 +11,10 @@
 
 <script>
   var he = require('he');
-  module.exports = {
+  export default {
+
+    name: 'OIcon',
+
     props: {
       color: {
         default: 'red'
@@ -20,7 +23,7 @@
         default: '150'
       },
       iconID: {
-        default: '&#xe64d'
+        default: '&#xe668'
       }
     },
     computed: {
@@ -32,10 +35,10 @@
 
       var domModule = weex.requireModule('dom');
       //目前支持ttf、woff文件，不支持svg、eot类型,moreItem at http://www.iconfont.cn/
-      
+
       domModule.addRule('fontFace', {
         'fontFamily': "iconfont",
-        'src': "url('http://at.alicdn.com/t/font_jm24n5nmz9i19k9.ttf')"
+        'src': "url('http://at.alicdn.com/t/font_gte9hjkueah5mi.ttf')"
       });
     }
   }

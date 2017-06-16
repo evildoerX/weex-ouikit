@@ -1,8 +1,9 @@
 <template>
   <div class="v-iconfonts">
+    <OIcon></OIcon>
     <div class="icon-row">
       <div class="icon-cell">
-        <v-icon>&#xe64f;</v-icon>
+        <v-icon>&#xe6d0</v-icon>
       </div>
       <div class="icon-cell">
         <v-icon>&#xe659;</v-icon>

@@ -15,7 +15,6 @@ import UH4 from 'packages/text/H4'
 import UH5 from 'packages/text/H5'
 import UH6 from 'packages/text/H6'
 import UH7 from 'packages/text/H7'
-import UButton from 'packages/button/Button'
 import OButton from 'packages/button/O-Button'
 import URadio from 'packages/form/Radio'
 import UCheckbox from 'packages/form/Checkbox'
@@ -50,7 +49,6 @@ Vue.component(UH3.name, UH3)
 Vue.component(UH5.name, UH5)
 Vue.component(UH6.name, UH6)
 Vue.component(UH7.name, UH7)
-Vue.component(UButton.name, UButton)
 Vue.component(OButton.name, OButton)
 Vue.component(URadio.name, URadio)
 Vue.component(UCheckbox.name, UCheckbox)

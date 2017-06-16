@@ -1,0 +1,50 @@
+/**TYPE**/
+
+  .oc-btn-plain-default {
+    color: $ocBtnFontPlainDefaultColor;
+    background-color: $ocBtnPlainDefaultColor;
+    border-color: $ocBtnPlainDefaultBorderColor;
+  }
+
+  .oc-btn-plain-default:active {
+    color: $ocBtnFontPlainDefaultActiveColor;
+    background-color: $ocBtnPlainDefaultActiveColor;
+    border-color: $ocBtnPlainDefaultActiveBorderColor;
+  }
+  
+  .oc-btn-plain-primary {
+    color: $ocBtnFontPlainPrimaryColor;
+    background-color: $ocBtnPlainPrimaryColor;
+    border-color: $ocBtnPlainPrimaryBorderColor;
+  }
+
+  .oc-btn-plain-primary:active {
+    color: $ocBtnFontPlainPrimaryActiveColor;
+    background-color: $ocBtnPlainPrimaryActiveColor;
+    border-color: $ocBtnPlainPrimaryActiveBorderColor;
+  }
+
+
+  .oc-btn-plain-warn {
+    color: $ocBtnFontPlainWarnColor;
+    background-color: $ocBtnPlainWarnColor;
+    border-color: $ocBtnPlainWarnBorderColor;
+  }
+
+  .oc-btn-plain-warn:active {
+    color: $ocBtnFontPlainWarnActiveColor;
+    background-color: $ocBtnPlainWarnActiveColor;
+    border-color: $ocBtnPlainWarnActiveBorderColor;
+  }
+
+  .oc-btn-plain-disabled {
+    color: $ocBtnDefaultDisabledFontColor;
+    background-color: $ocBtnPlainDisabledColor;
+    border-color: $ocBtnPlainDisabledBorderColor;
+  }
+
+  .oc-btn-plain-disabled:active {
+    color: $ocBtnDefaultDisabledFontColor;
+    background-color: $ocBtnPlainDisabledColor;
+    border-color: $ocBtnPlainDisabledBorderColor;
+  }

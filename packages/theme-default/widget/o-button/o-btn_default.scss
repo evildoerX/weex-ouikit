@@ -1,0 +1,22 @@
+  .oc-btn-default {
+    color: $ocBtnDefaultFontColor;
+    background-color: $ocBtnDefaultBg;
+    border-color: $ocBtnDefaultBorderBg;
+  }
+
+  .oc-btn-default:active {
+    color: $ocBtnDefaultActiveFontColor;
+    background-color: $ocBtnDefaultActiveBg;
+  }
+
+  .oc-btn-disabled-default {
+    color: $ocBtnDefaultDisabledFontColor;
+    background-color: $ocBtnDefaultDisabledBg;
+    border-color: $ocBtnDefaultBorderBg;
+  }
+
+  .oc-btn-disabled-default:active {
+    color: $ocBtnDefaultDisabledFontColor;
+    background-color: $ocBtnDefaultDisabledBg;
+    border-color: $ocBtnDefaultBorderBg;
+  }

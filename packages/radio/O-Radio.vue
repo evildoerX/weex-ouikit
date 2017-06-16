@@ -13,25 +13,28 @@
 
 
 <script>
-  import oradioitem from './o-radioitem.vue'
+  import oradioitem from './O-Radioitem.vue'
   export default {
+
+    name: 'ORadio',
+
     data() {
       return {
         propkey: ''
       }
     },
     props: {
-      radioItems: { 
-        default: [] 
+      radioItems: {
+        default: []
       },
-      title: { 
-        default: '测试' 
+      title: {
+        default: '测试'
       },
       defaultkey: {
         default: ''
       },
-      val: { 
-        default: '' 
+      val: {
+        default: ''
       }
     },
     components: {

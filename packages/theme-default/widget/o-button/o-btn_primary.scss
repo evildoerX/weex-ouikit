@@ -1,23 +1,23 @@
-  .oc-btn-primary {
-    color: $ocBtnFontColor;
-    background-color: $ocBtnPrimaryBg;
-    border-color: $ocBtnPrimaryBg;
+  .o-btn_primary {
+    color: $oBtnFontColor;
+    background-color: $oBtnPrimaryBg;
+    border-color: $oBtnPrimaryBg;
   }
 
-  .oc-btn-primary:active {
-    color: $ocBtnActiveFontColor;
-    background-color: $ocBtnPrimaryActiveBg;
-    border-color: $ocBtnPrimaryActiveBg;
+  .o-btn_primary:active {
+    color: $oBtnActiveFontColor;
+    background-color: $oBtnPrimaryActiveBg;
+    border-color: $oBtnPrimaryActiveBg;
   }
 
-  .oc-btn-disabled-primary {
-    color: $ocBtnDisabledFontColor;
-    background-color: $ocBtnPrimaryDisabledBg;
-    border-color: $ocBtnPrimaryDisabledBg;
+  .o-btn-disabled_primary {
+    color: $oBtnDisabledFontColor;
+    background-color: $oBtnPrimaryDisabledBg;
+    border-color: $oBtnPrimaryDisabledBg;
   }
 
-  .oc-btn-disabled-primary:active {
-    color: $ocBtnDisabledFontColor;
-    background-color: $ocBtnPrimaryDisabledBg;
-    border-color: $ocBtnPrimaryDisabledBg;
+  .o-btn-disabled_primary:active {
+    color: $oBtnDisabledFontColor;
+    background-color: $oBtnPrimaryDisabledBg;
+    border-color: $oBtnPrimaryDisabledBg;
   }

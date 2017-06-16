@@ -1,37 +1,37 @@
-  @import '../../variables/button.scss';
-  @import './oc-btn-default.scss';
-  @import './oc-btn-primary.scss';
-  @import './oc-btn-warn.scss';
-  @import './oc-btn-plain.scss';
+  @import '../../base/fn.scss';
+  @import './o-btn_default.scss';
+  @import './o-btn_primary.scss';
+  @import './o-btn_warn.scss';
+  @import './o-btn_plain.scss';
+  @import './o-button_angle.scss';
 
-  .oc-btn {
+  .o-btn {
     text-align: center;
     border-width:1px;
     border-style: solid;
   }
 
-  .oc-btn-link {
-    color: $ocBtnLinkFontColor;
+  .o-btn_link {
+    color: $oBtnLinkFontColor;
     border-color: transparent;
   }
 
-  .oc-btn-sz-large {
+  .o-btn-sz_large {
     width: 690px;
     line-height: 88px;
-    font-size: $ocBtnFontSize;
-    border-radius: $ocBtnBorderRadius;
+    font-size: $oBtnFontSize;
   }
 
-  .oc-btn-sz-middle {
+  .o-btn-sz_middle {
     width: 360px;
     line-height: 70px;
-    font-size: $ocBtnmiddleFontSize;
-    border-radius: $ocBtnBorderRadius;
+    font-size: $oBtnmiddleFontSize;
   }
 
-  .oc-btn-sz-small {
+  .o-btn-sz_small {
     width: 120px;
     line-height: 60px;
-    font-size: $ocBtnMiniFontSize;
-    border-radius: $ocBtnBorderRadius;
+    font-size: $oBtnMiniFontSize;
+
   }
+

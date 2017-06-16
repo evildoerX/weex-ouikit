@@ -13,20 +13,23 @@
 
 
 <script>
-  import ocChecklistitem from './oc-checklistitem.vue'
+  import ocChecklistitem from './O-Checklistitem.vue'
   export default {
+
+    name: 'OChecklist',
+
     props: {
-      checkItems: { 
-        default: [] 
+      checkItems: {
+        default: []
       },
-      title: { 
-        default: '测试' 
+      title: {
+        default: '测试'
       },
-      value: { 
-        default: [] 
+      value: {
+        default: []
       },
-      val: { 
-        default: '' 
+      val: {
+        default: ''
       },
     },
     components: {

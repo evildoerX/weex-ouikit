@@ -18,6 +18,7 @@ import UH7 from 'packages/text/H7'
 import OButton from 'packages/button/O-Button'
 import URadio from 'packages/form/Radio'
 import UCheckbox from 'packages/form/Checkbox'
+import OChecklist from 'packages/checklist/O-Checklist'
 import USwitch from 'packages/form/Switch'
 import UInput from 'packages/form/Input'
 import UInputNumber from 'packages/form/InputNumber'
@@ -52,6 +53,7 @@ Vue.component(UH7.name, UH7)
 Vue.component(OButton.name, OButton)
 Vue.component(URadio.name, URadio)
 Vue.component(UCheckbox.name, UCheckbox)
+Vue.component(OChecklist.name, OChecklist)
 Vue.component(USwitch.name, USwitch)
 Vue.component(UInput.name, UInput)
 Vue.component(UInputNumber.name, UInputNumber)

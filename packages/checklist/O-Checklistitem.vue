@@ -43,20 +43,19 @@ export default {
     boxconten () {
       return [
         this.right ? 'box_right': 'box',
-        this.checked ? 'box-checked' : '',
-        this.disabled ? 'box-disabled' : ''
+        this.disabled ? 'box_disabled' : ''
       ]
     },
     iconconten () {
       return [
         this.right ? 'icon_right': 'icon_left',
-        this.disabled ? 'icon-disabled' : ''
+        this.disabled ? 'icon_disabled' : ''
       ]
     },
     iconbgconten () {
       return [
         this.right ? 'iconbg_right': 'iconbg_left',
-        this.disabled ? 'iconbg-disabled' : ''
+        this.disabled ? 'iconbg_disabled' : ''
       ]
     },
     iconbgColor () {
@@ -65,7 +64,7 @@ export default {
     textcontent () {
       return [
         this.right ? '': 'text_left',
-        this.disabled ? 'text-disabled' : ''
+        this.disabled ? 'text_disabled' : ''
       ]
     },
     o_checkbox (){

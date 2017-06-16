@@ -1,21 +1,21 @@
 <template>
   <div class="checkbox" :class="o_checkbox" @click="change">
     <div class="checkbox-content">
-      <text 
-        class="box" 
+      <text
+        class="box"
         :class="boxconten"></text>
-      <text 
-        v-if="checked" 
+      <text
+        v-if="checked"
         class="iconbg"
         :style="iconbgColor"
         :class="iconbgconten"></text>
-      <text 
-        v-if="checked" 
-        class="icon" 
+      <text
+        v-if="checked"
+        class="icon"
         :class="iconconten"></text>
-      <text 
-        v-if="$slots.default" 
-        class="text" 
+      <text
+        v-if="$slots.default"
+        class="text"
         :class="textcontent">
           <slot></slot>
         </text>
@@ -43,7 +43,7 @@ export default {
     boxconten () {
       return [
         this.right ? 'box_right': 'box',
-        this.checked ? 'box-checked' : '', 
+        this.checked ? 'box-checked' : '',
         this.disabled ? 'box-disabled' : ''
       ]
     },
@@ -94,98 +94,5 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
-
-.checkbox {
-  padding-left: 30px;
-  width: 750px;
-}
-.checkbox:active {
-  background-color: #ececec;
-}
-.checkbox_disabled:active {
-  background-color: white;
-}
-.checkbox-content {
-  flex-direction: row;
-  align-items: center;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #D9D9D9;
-  width: 720px;
-  height: 87px;
-}
-.box{
-  width: 46px;
-  height: 46px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #D9D9D9;
-  border-radius: 23px;
-  }
-.box_right{
-  position: absolute;
-  right: 30px;
-  top:20px;
-  }
-
-.box-disabled
-{
-  border-color: #D9D9D9;
-}
-.icon{
-  width: 24px;
-  height: 14px;
-  border-left-style: solid;
-  border-left-width: 3px;
-  border-left-color: white;
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
-  border-bottom-color: white;
-  border-radius: 2px;
-  transform: rotate(-45deg);
-}
-.iconbg{
-  width: 46px;
-  height: 46px;
-  border-radius: 23px
-}
-.iconbg_left {
-  position: absolute;
-  left: 0px;
-  top:20px;
-}
-.iconbg_right {
-  position: absolute;
-  right: 30px;
-  top:20px;
-}
-.iconbg-disabled {
-  border-color: #D9D9D9;
-  background-color: #D9D9D9;
-}
-.icon_left{
-  position: absolute;
-  left: 10px;
-  top: 32px;
-}
-.icon_right {
-  position: absolute;
-  right: 40px;
-  top: 32px;
-  }
-.icon-disabled
-{
-  border-left-color: white;
-  border-bottom-color: white;
-  }
-.text{
-  color: black;
-}
-.text_left{
-  margin-left: 25px;
-}
-.text-disabled
-{
-  color: gray;
-}
+@import '../theme-default/widget/o-checklist/o-checklist.scss'
 </style>

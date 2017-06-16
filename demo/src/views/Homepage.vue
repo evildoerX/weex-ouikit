@@ -27,6 +27,14 @@
           <text>多选</text></div>
       </div>
       <div class="grid-row">
+        <div class="grid-cell" @click="jump('/cell')">
+          <OIcon size="46" color="#04be02" iconID="&#xe60a"></OIcon>
+          <text>列表</text></div>
+        <div class="grid-cell" @click="jump('/input-number')">
+          <OIcon size="46" color="#04be02" iconID="&#xe6e6;"></OIcon>
+          <text>数字选择</text></div>
+      </div>
+      <!--<div class="grid-row">
         <div class="grid-cell" @click="jump('/input')">
           <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
           <text>输入框(待优化)</text></div>
@@ -36,8 +44,8 @@
         <div class="grid-cell" @click="jump('/select')">
           <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
           <text>下拉(待优化)</text></div>
-      </div>
-      <div class="grid-row">
+      </div>-->
+      <!--<div class="grid-row">
         <div class="grid-cell" @click="showLoading">
           <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
           <text>加载动画(仅做参考)</text></div>
@@ -47,8 +55,8 @@
         <div class="grid-cell" @click="jump('/progress')">
           <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
           <text>进度条</text></div>
-      </div>
-      <div class="grid-row">
+      </div>-->
+      <!--<div class="grid-row">
         <div class="grid-cell" @click="jump('/cell')">
           <OIcon size="46" color="#04be02" iconID="&#xe60a"></OIcon>
           <text>列表</text></div>
@@ -58,8 +66,8 @@
         <div class="grid-cell" @click="jump('/checker')">
           <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
           <text>全选</text></div>
-      </div>
-      <div class="grid-row">
+      </div>-->
+      <!--<div class="grid-row">
         <div class="grid-cell" @click="jump('/range')">
           <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
           <text>Range(原生有坑)</text></div>
@@ -69,8 +77,8 @@
         <div class="grid-cell" @click="jump('/rater')">
           <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
           <text>评分</text></div>
-      </div>
-      <div class="grid-row">
+      </div>-->
+      <!--<div class="grid-row">
         <div class="grid-cell" @click="jump('/timeline')">
           <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
           <text>时间轴</text></div>
@@ -80,7 +88,7 @@
         <div class="grid-cell" @click="jump('/date-format')">
           <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
           <text>简单的时间格式化</text></div>
-      </div>
+      </div>-->
     </div>
   </div>
 </template>
@@ -107,6 +115,7 @@ export default {
 }
 .header{
   position: fixed;
+  top:0;
   width:750px;
   height:87px;
   background-color:#35495e;

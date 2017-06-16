@@ -1,5 +1,9 @@
-import VFont from './components/Iconfont'
 import OIcon from 'packages/icon/O-Icon'
+import OButton from 'packages/button/O-Button'
+import OChecklist from 'packages/checklist/O-Checklist'
+import ORadio from 'packages/radio/O-Radio'
+import OCell from 'packages/cell/O-Cell'
+import VFont from './components/Iconfont'
 import VChecker from './components/Checker'
 import VRange from './components/Range'
 import VRater from './components/Rater'
@@ -15,10 +19,8 @@ import UH4 from 'packages/text/H4'
 import UH5 from 'packages/text/H5'
 import UH6 from 'packages/text/H6'
 import UH7 from 'packages/text/H7'
-import OButton from 'packages/button/O-Button'
 import URadio from 'packages/form/Radio'
 import UCheckbox from 'packages/form/Checkbox'
-import OChecklist from 'packages/checklist/O-Checklist'
 import USwitch from 'packages/form/Switch'
 import UInput from 'packages/form/Input'
 import UInputNumber from 'packages/form/InputNumber'
@@ -33,8 +35,12 @@ import UCellGroup from 'packages/layout/CellGroup'
 import UCell from 'packages/layout/Cell'
 import UBadge from 'packages/others/Badge'
 
-Vue.component(VFont.name, VFont)
 Vue.component(OIcon.name, OIcon)
+Vue.component(OButton.name, OButton)
+Vue.component(OChecklist.name, OChecklist)
+Vue.component(ORadio.name, ORadio)
+Vue.component(OCell.name, OCell)
+Vue.component(VFont.name, VFont)
 Vue.component(VChecker.name, VChecker)
 Vue.component(VRange.name, VRange)
 Vue.component(VRater.name, VRater)
@@ -50,10 +56,8 @@ Vue.component(UH3.name, UH3)
 Vue.component(UH5.name, UH5)
 Vue.component(UH6.name, UH6)
 Vue.component(UH7.name, UH7)
-Vue.component(OButton.name, OButton)
 Vue.component(URadio.name, URadio)
 Vue.component(UCheckbox.name, UCheckbox)
-Vue.component(OChecklist.name, OChecklist)
 Vue.component(USwitch.name, USwitch)
 Vue.component(UInput.name, UInput)
 Vue.component(UInputNumber.name, UInputNumber)

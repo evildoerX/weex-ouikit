@@ -2,15 +2,15 @@
   <div class="v-input-number">
     <div class="number-row">
       <div class="number-cell">
-        <u-input-number :value="number1" @input="v=>number1=v"></u-input-number>
+        <OInputNumber :value="number1" @input="v=>number1=v"></OInputNumber>
       </div>
       <div class="number-cell">
-        <u-input-number :value="number2" :min="0" :max="20" @input="v=>number2=v"></u-input-number>
+        <OInputNumber :value="number2" :min="0" :max="20" @input="v=>number2=v"></OInputNumber>
       </div>
     </div>
     <div class="number-row">
       <div class="number-cell">
-        <u-input-number :value="number3" disabled></u-input-number>
+        <OInputNumber :value="number3" disabled></OInputNumber>
       </div>
     </div>
   </div>

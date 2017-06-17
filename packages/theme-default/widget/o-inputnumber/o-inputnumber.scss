@@ -1,0 +1,54 @@
+.input-number {
+  flex-direction: row;
+  width: 220px;
+  align-items: center;
+  height: 56px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ececec;
+  border-radius: 4px;
+}
+.minus {
+  width: 60px;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  font-size: 50px;
+  color: #3cc51f;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #ececec;
+}
+.minus-disabled {
+  color: #e6ecf2;
+}
+.plus {
+  width: 60px;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  font-size: 50px;
+  color: #3cc51f;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #ececec;
+}
+.plus-disabled {
+  color: #e6ecf2;
+}
+.input {
+  width: 100px;
+  height: 56px;
+  line-height: 56px;
+  font-size: 40px;
+  text-align: center;
+  color: #666;
+  background-color: transparent;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+.input-disabled {
+  color: #e6ecf2;
+}

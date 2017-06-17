@@ -23,25 +23,5 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
-.loading {
-  align-items: center;
-  flex-direction:row;
-  justify-content: center;
-}
-.loadingline {
-  position: absolute;
-  width: 486px;
-  height: 1px;
-  background-color: #E5E5E5;
-}
-.img {
-  width: 40px;
-  height: 40px;
-}
-.text {
-  line-height: 40px;
-  font-size: 28px;
-  padding-left:10px;
-  padding-right:10px;
-}
+@import '../theme-default/widget/o-laoding/o-loadingmore'
 </style>

@@ -9,12 +9,5 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
-.loading {
-  align-items: center;
-  justify-content: center;
-}
-.img {
-  width: 40px;
-  height: 40px;
-}
+@import '../theme-default/widget/o-laoding/o-inlineloading.scss'
 </style>

@@ -10,22 +10,5 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
-.loading {
-  background-color: #535353;
-  width: 250px;
-  height: 250px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-}
-.img {
-  width: 76px;
-  height: 76px;
-}
-.text {
-  margin-top: 20px;
-  color: #fcfcfc;
-  text-align: center;
-  font-size: 32px;
-}
+@import '../theme-default/widget/o-laoding/o-loaidng'
 </style>

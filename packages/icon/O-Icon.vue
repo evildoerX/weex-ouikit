@@ -38,7 +38,7 @@
 
       domModule.addRule('fontFace', {
         'fontFamily': "iconfont",
-        'src': "url('http://at.alicdn.com/t/font_h1rl2rzngigujtt9.ttf')"
+        'src': "url('http://at.alicdn.com/t/font_735pqo0vw87zxgvi.ttf')"
       });
     }
   }

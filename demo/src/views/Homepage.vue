@@ -39,13 +39,13 @@
       </div>
       <div class="grid-row">
         <div class="grid-cell" @click="jump('/loading')">
-          <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
+          <OIcon size="46" color="#04be02" iconID="&#xe6a1;"></OIcon>
           <text>Loading</text></div>
         <div class="grid-cell" @click="jump('/inlineloading')">
-          <OIcon size="46" color="#04be02" iconID="&#xe6e6"></OIcon>
+          <OIcon size="46" color="#04be02" iconID="&#xe6a1;"></OIcon>
           <text>InLineLoading</text></div>
         <div class="grid-cell" @click="jump('/loadingmore')">
-          <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
+          <OIcon size="46" color="#04be02" iconID="&#xe6a1;"></OIcon>
           <text>LoadingMore</text></div>
       </div>
       <!--<div class="grid-row">

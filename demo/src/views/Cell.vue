@@ -1,6 +1,6 @@
 <template>
   <div class="v-cells">
-     <u-cell-group title="个人信息">
+     <OCellGroup title="个人信息">
       <OCell
         dataRole="none"
         :height="navBarHeight"
@@ -57,7 +57,7 @@
         showArrow
         @Click="Click">
       </OCell>
-    </u-cell-group>
+    </OCellGroup>
   </div>
 </template>
 <script>

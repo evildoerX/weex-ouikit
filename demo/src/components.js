@@ -3,6 +3,7 @@ import OButton from 'packages/button/O-Button'
 import OChecklist from 'packages/checklist/O-Checklist'
 import ORadio from 'packages/radio/O-Radio'
 import OCell from 'packages/cell/O-Cell'
+import OCellGroup from 'packages/cell/O-CellGroup'
 import VFont from './components/Iconfont'
 import VChecker from './components/Checker'
 import VRange from './components/Range'
@@ -40,6 +41,7 @@ Vue.component(OButton.name, OButton)
 Vue.component(OChecklist.name, OChecklist)
 Vue.component(ORadio.name, ORadio)
 Vue.component(OCell.name, OCell)
+Vue.component(OCellGroup.name, OCellGroup)
 Vue.component(VFont.name, VFont)
 Vue.component(VChecker.name, VChecker)
 Vue.component(VRange.name, VRange)

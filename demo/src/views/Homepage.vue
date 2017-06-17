@@ -37,6 +37,17 @@
           <OIcon size="46" color="red" iconID="&#xe632;"></OIcon>
           <text>Badge</text></div>
       </div>
+      <div class="grid-row">
+        <div class="grid-cell" @click="jump('/loading')">
+          <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
+          <text>Loading</text></div>
+        <div class="grid-cell" @click="jump('/input-number')">
+          <OIcon size="46" color="#04be02" iconID="&#xe6e6"></OIcon>
+          <text>数字选择</text></div>
+        <div class="grid-cell" @click="jump('/select')">
+          <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
+          <text>下拉(待优化)</text></div>
+      </div>
       <!--<div class="grid-row">
         <div class="grid-cell" @click="jump('/input')">
           <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
@@ -96,17 +107,8 @@
   </div>
 </template>
 <script>
-import { mapActions } from 'vuex'
 export default {
-  methods: {
-    ...mapActions(['toggleLoading']),
-    showLoading () {
-      this.toggleLoading(true)
-      setTimeout(() => {
-        this.toggleLoading(false)
-      }, 2000)
-    }
-  }
+
 }
 </script>
 <style lang="sass" scoped>

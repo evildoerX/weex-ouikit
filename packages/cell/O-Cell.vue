@@ -1,37 +1,28 @@
 <template>
   <div
-    :dataRole="dataRole"
     class="container"
     :style="{ height: `${height}px`}"
-    v-on:click="ocCellItemClick">
+    @click="click"
+    @longpress="longpress">
     <div class="content">
       <div class="left-content">
         <image
-          v-if="leftItemSrc"
-          naviItemPosition="left"
-          :src="leftItemSrc"
+          v-if="Src"
+          :src="Src"
           class="left-image"></image>
         <text
-          v-if="leftItemTitle"
-          naviItemPosition="left"
-          :style="{color:leftItemColor}"
-          :class="lefttext">{{leftItemTitle}}</text>
+          v-if="Title"
+          :style="{color:TitleColor}"
+          :class="lefttext">{{Title}}</text>
         <text
-          v-if="leftTip"
-          naviItemPosition="left"
-          class="left-tip">{{leftTip}}</text>
+          v-if="Tip"
+          class="left-tip">{{Tip}}</text>
       </div>
       <div class="right-content">
         <text
-          v-if="rightItemDisc"
-          naviItemPosition="right"
-          :style="{color:rightItemDiscColor}"
-          class="rightItemDisc">{{rightItemDisc}}</text>
-        <text
-          v-if="rightItemTitle"
-          naviItemPosition="right"
-          :style="{color:rightItemColor}"
-          :class="righttext">{{rightItemTitle}}</text>
+          v-if="value"
+          :style="{color:valueColor}"
+          :class="valuetext">{{value}}</text>
       </div>
     </div>
   </div>
@@ -48,6 +39,7 @@
     background-color: #ECECEC;
   }
   .content {
+    position: relative;
     flex-direction: row;
     border-top-style: solid;
     border-top-width: 1px;
@@ -60,11 +52,11 @@
     justify-content: center;
   }
   .left-text {
-    font-size: 32px; 
+    font-size: 34px;
     font-family: 'Open Sans', sans-serif;
   }
   .left-textA {
-    font-size: 32px; 
+    font-size: 34px;
     margin-left: 10px;
     font-family: 'Open Sans', sans-serif;
   }
@@ -80,72 +72,70 @@
     margin-left: 10px;
   }
   .left-image {
-    width: 50px; 
+    width: 50px;
     height: 50px;
   }
   .right-content {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: absolute; 
-    bottom: 20px; 
-    right: 30px; 
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
   }
   .right-text {
-    font-size: 32px; 
+    font-size: 34px;
     font-family: 'Open Sans', sans-serif;
   }
   .right-textA {
-    font-size: 32px; 
+    font-size: 34px;
     margin-left: 10px;
     font-family: 'Open Sans', sans-serif;
   }
 </style>
 
 <script>
-  module.exports = {
-    data() {
+  export default {
+    name: 'OCell',
+    data () {
       return {
-
       }
     },
     props: {
-      dataRole: { default: 'navbar' },
       //导航条背景色
       backgroundColor: { default: 'white' },
       //导航条高度
       height: { default: 87 },
       //左侧按钮图片
-      leftItemSrc: { default: '' },
+      Src: { default: '' },
       //左侧按钮标题
-      leftItemTitle: { default: '' },
+      Title: { default: '' },
       //左侧tips
-      leftTip: {default: ''},
+      Tip: {default: '' },
       //左侧按钮颜色
-      leftItemColor: { default: 'black' },
-      //右侧按钮标题
-      rightItemTitle: { default: '>' },
-      //右侧按钮颜色
-      rightItemColor: { default: '#999999' },
-      //右侧描述文字
-      rightItemDisc: { default: '' },
-      //右侧描述颜色
-      rightItemDiscColor: { default: '' }
+      TitleColor: { default: 'black' },
+      //右侧值
+      value: { default: '>' },
+      //右侧值颜色
+      valueColor: { default: '#999999' }
     },
     methods: {
-      ocCellItemClick: function (e) {
-        this.$emit('ocCellItemClick');
+      click (e) {
+        this.$emit('click', e)
+      },
+      longpress (e) {
+        this.$emit('longpress', e)
       }
     },
     computed: {
       lefttext () {
         return [
-          this.leftItemSrc ? `left-textA` : `left-text`,
+          this.Src ? `left-textA` : `left-text`
         ]
       },
-      righttext () {
+      valuetext () {
         return [
-          this.rightItemDisc ? `right-textA` : `right-text`,
+          this.value ? `right-textA` : `right-text`
         ]
       }
     }

@@ -16,19 +16,27 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-@import "../theme-default/var.styl"
-.cell-group
-  background-color #fff
-.header
-  padding-top 16px
-  padding-bottom 16px
-  padding-left 20px
-  padding-right 20px
-  background-color $color-background
-.title
-  color $color-text-minor
-  font-size 22px
-.text
-  color $color-text-highlight
+<style lang="sass" scoped>
+.cell-group {
+  background-color: #fff;
+  border-bottom-color: #e5e5e5;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom-color: #e5e5e5;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.title {
+  color: #999999;
+  font-size: 28px;
+}
+.text {
+  color: #999999;
+}
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div
     class="container"
+    :class="cellstyle"
     :style="{ height: `${height}px`}"
     @click="click"
     @longpress="longpress">
@@ -18,126 +19,79 @@
           v-if="Tip"
           class="left-tip">{{Tip}}</text>
       </div>
-      <div class="right-content">
-        <text
+      <text
           v-if="value"
           :style="{color:valueColor}"
+          class="text"
           :class="valuetext">{{value}}</text>
-      </div>
+        <text
+          v-if="showArrow"
+          class="arrow"></text>
     </div>
   </div>
 </template>
 
-<style scoped lang="sass">
-  .container {
-    flex-direction: row;
-    padding-left: 30px;
-    width: 750px;
-    margin-top: -1px;
-  }
-  .container:active {
-    background-color: #ECECEC;
-  }
-  .content {
-    position: relative;
-    flex-direction: row;
-    border-top-style: solid;
-    border-top-width: 1px;
-    width: 720px;
-    border-top-color: #D9D9D9;
-  }
-  .left-content {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .left-text {
-    font-size: 34px;
-    font-family: 'Open Sans', sans-serif;
-  }
-  .left-textA {
-    font-size: 34px;
-    margin-left: 10px;
-    font-family: 'Open Sans', sans-serif;
-  }
-  .left-tip {
-    background-color: #f74c31;
-    color: #fff;
-    font-size: 24px;
-    line-height:32px;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    border-radius: 16px;
-    width: 32px;
-    margin-left: 10px;
-  }
-  .left-image {
-    width: 50px;
-    height: 50px;
-  }
-  .right-content {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
-  }
-  .right-text {
-    font-size: 34px;
-    font-family: 'Open Sans', sans-serif;
-  }
-  .right-textA {
-    font-size: 34px;
-    margin-left: 10px;
-    font-family: 'Open Sans', sans-serif;
-  }
-</style>
-
 <script>
-  export default {
-    name: 'OCell',
-    data () {
-      return {
-      }
+import OIcon from '../icon/O-Icon'
+export default {
+  name: 'OCell',
+  components: {
+    OIcon
+  },
+  data () {
+    return {
+    }
+  },
+  props: {
+    //导航条背景色
+    backgroundColor: { default: 'white' },
+    //导航条高度
+    height: { default: 87 },
+    //左侧按钮图片
+    Src: { default: '' },
+    //左侧按钮标题
+    Title: { default: '' },
+    //左侧tips
+    Tip: {default: '' },
+    //左侧按钮颜色
+    TitleColor: { default: '' },
+    //右侧值
+    value: { default: '' },
+    //右侧值颜色
+    valueColor: { default: '#999999' },
+    showArrow: Boolean,
+    Disabled: Boolean
+  },
+  methods: {
+    click (e) {
+      this.$emit('click', e)
     },
-    props: {
-      //导航条背景色
-      backgroundColor: { default: 'white' },
-      //导航条高度
-      height: { default: 87 },
-      //左侧按钮图片
-      Src: { default: '' },
-      //左侧按钮标题
-      Title: { default: '' },
-      //左侧tips
-      Tip: {default: '' },
-      //左侧按钮颜色
-      TitleColor: { default: 'black' },
-      //右侧值
-      value: { default: '>' },
-      //右侧值颜色
-      valueColor: { default: '#999999' }
+    longpress (e) {
+      this.$emit('longpress', e)
+    }
+  },
+  computed: {
+    lefttext () {
+      return [
+        this.Src ? `left-textA` : `left-text`,
+        this.Disabled ? `Disabled` : ``
+      ]
     },
-    methods: {
-      click (e) {
-        this.$emit('click', e)
-      },
-      longpress (e) {
-        this.$emit('longpress', e)
-      }
+    valuetext () {
+      return [
+        this.showArrow ? `right-textA` : `right-text`,
+        this.Disabled ? `Disabled` : ``
+      ]
     },
-    computed: {
-      lefttext () {
-        return [
-          this.Src ? `left-textA` : `left-text`
-        ]
-      },
-      valuetext () {
-        return [
-          this.value ? `right-textA` : `right-text`
-        ]
-      }
+    cellstyle () {
+      return [
+        this.Disabled ? `Disabled` : ``
+      ]
     }
   }
+}
 </script>
+
+<style scoped lang="sass">
+  @import '../theme-default/widget/o-cell/o-cell.scss'
+</style>

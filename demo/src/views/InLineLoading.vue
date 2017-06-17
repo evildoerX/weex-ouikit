@@ -1,8 +1,7 @@
 <template>
   <div>
-    <div class="buttongroup">
-      <OButton class="button-item" type="primary" size="large" @click="showLoading" >显示loading(2s后关闭)</OButton>
-      <OLoading v-if="$store.getters.loadingVisiable">Loading</OLoading>
+    <div class="inlineloading">
+      <OInLineLoading></OInLineLoading>
     </div>
   </div>
 
@@ -23,15 +22,8 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
-.buttongroup{
-  justify-content:center;
-  align-items: center;
-}
-.button-item{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 .inlineloading{
+  margin-top: 20px;
   flex-direction:rew;
   margin-bottom: 20px;
 }

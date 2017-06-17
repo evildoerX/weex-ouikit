@@ -7,6 +7,8 @@ import OCellGroup from 'packages/cell/O-CellGroup'
 import OInputNumber from 'packages/inputnumber/O-InputNumber'
 import OBadge from 'packages/badge/O-Badge'
 import OLoading from 'packages/loading/O-Loading'
+import OInLineLoading from 'packages/loading/O-InLineLoading'
+import OLoadingMore from 'packages/loading/O-LoadingMore'
 import VFont from './components/Iconfont'
 import VChecker from './components/Checker'
 import VRange from './components/Range'
@@ -48,6 +50,8 @@ Vue.component(OCellGroup.name, OCellGroup)
 Vue.component(OInputNumber.name, OInputNumber)
 Vue.component(OBadge.name, OBadge)
 Vue.component(OLoading.name, OLoading)
+Vue.component(OInLineLoading.name, OInLineLoading)
+Vue.component(OLoadingMore.name, OLoadingMore)
 Vue.component(VFont.name, VFont)
 Vue.component(VChecker.name, VChecker)
 Vue.component(VRange.name, VRange)

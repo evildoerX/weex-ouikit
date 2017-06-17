@@ -41,12 +41,12 @@
         <div class="grid-cell" @click="jump('/loading')">
           <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
           <text>Loading</text></div>
-        <div class="grid-cell" @click="jump('/input-number')">
+        <div class="grid-cell" @click="jump('/inlineloading')">
           <OIcon size="46" color="#04be02" iconID="&#xe6e6"></OIcon>
-          <text>数字选择</text></div>
-        <div class="grid-cell" @click="jump('/select')">
+          <text>InLineLoading</text></div>
+        <div class="grid-cell" @click="jump('/loadingmore')">
           <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
-          <text>下拉(待优化)</text></div>
+          <text>LoadingMore</text></div>
       </div>
       <!--<div class="grid-row">
         <div class="grid-cell" @click="jump('/input')">

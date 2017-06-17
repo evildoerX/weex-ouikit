@@ -1,0 +1,30 @@
+.badge-wrapper {
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.dot {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 6px;
+}
+.count {
+  position: absolute;
+  right: -10px;
+  top: 0;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  background-color: red;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

@@ -5,6 +5,7 @@ import ORadio from 'packages/radio/O-Radio'
 import OCell from 'packages/cell/O-Cell'
 import OCellGroup from 'packages/cell/O-CellGroup'
 import OInputNumber from 'packages/inputnumber/O-InputNumber'
+import OBadge from 'packages/badge/O-Badge'
 import VFont from './components/Iconfont'
 import VChecker from './components/Checker'
 import VRange from './components/Range'
@@ -44,6 +45,7 @@ Vue.component(ORadio.name, ORadio)
 Vue.component(OCell.name, OCell)
 Vue.component(OCellGroup.name, OCellGroup)
 Vue.component(OInputNumber.name, OInputNumber)
+Vue.component(OBadge.name, OBadge)
 Vue.component(VFont.name, VFont)
 Vue.component(VChecker.name, VChecker)
 Vue.component(VRange.name, VRange)

@@ -17,10 +17,10 @@
 
     props: {
       color: {
-        default: 'red'
+        default: 'rgb(102, 113, 128)'
       },
       size: {
-        default: '150'
+        default: '35'
       },
       iconID: {
         default: '&#xe668'
@@ -38,7 +38,7 @@
 
       domModule.addRule('fontFace', {
         'fontFamily': "iconfont",
-        'src': "url('http://at.alicdn.com/t/font_gte9hjkueah5mi.ttf')"
+        'src': "url('http://at.alicdn.com/t/font_h1rl2rzngigujtt9.ttf')"
       });
     }
   }

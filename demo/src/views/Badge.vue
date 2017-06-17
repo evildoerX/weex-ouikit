@@ -2,26 +2,24 @@
   <div class="v-badges">
     <div class="row">
       <div class="cell">
-        <u-badge :count="99">
-          <v-icon>&#xe64f;</v-icon>
-        </u-badge>
+        <OBadge count="99+">
+          <OIcon iconID="&#xe7d5;"></OIcon>
+        </OBadge>
       </div>
       <div class="cell">
-        <u-badge dot>
+        <OBadge :count="9">
+          <OIcon iconID="&#xe7d6;"></OIcon>
+        </OBadge>
+      </div>
+      <div class="cell">
+        <OBadge dot>
           <text class="text">新闻</text>
-        </u-badge>
+        </OBadge>
       </div>
       <div class="cell">
-        <u-badge :count="count1">
+        <OBadge :count="count1">
           <text class="text" @click="() => count1 = count1 > 0 ? count1 - 1 : 0">点击后减少</text>
-        </u-badge>
-      </div>
-    </div>
-    <div class="row">
-      <div class="cell">
-        <u-badge count="99+">
-          <v-icon>&#xe657;</v-icon>
-        </u-badge>
+        </OBadge>
       </div>
     </div>
   </div>

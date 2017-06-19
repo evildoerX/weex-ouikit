@@ -12,7 +12,7 @@
 <script>
 const modal = weex.requireModule('modal')
 export default {
-  name: 'u-tabbar-item',
+  name: 'OTabbarItem',
   props: {
     label: {
       type: String,
@@ -52,10 +52,10 @@ export default {
   },
   created () {
     let parent = this.$parent
-    while (parent.$parent && parent.$options._componentTag !== 'u-tabbar') {
+    while (parent.$parent && parent.$options._componentTag !== 'OTabbar') {
       parent = parent.$parent
     }
-    if (parent.$options._componentTag !== 'u-tabbar') {
+    if (parent.$options._componentTag !== 'OTabbar') {
       modal.toast({ message: 'u-tabbar-item不能单独使用', duration: 0.3 })
       return
     }
@@ -66,24 +66,31 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-@import "../theme-default/var.styl"
-.tabbar-item
-  flex 1
-  height 100px
-  align-items center
-  justify-content center
-.icon-font
-  color $color-text-minor
-  font-size 32px
-.icon-font-active
-  color $color-primary
-.icon-image
-  max-width 40px
-  max-height @width
-.text
-  color $color-text-minor
-  font-size 20px
-.text-active
-  color $color-primary
+<style lang="sass" scoped>
+.tabbar-item {
+  flex: 1;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.icon-font {
+  color: #999999;
+  font-size: 32px;
+}
+
+.icon-font-active {
+  color: #09BB07;
+}
+.icon-image {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.text {
+  color: #999999;
+  font-size: 20px;
+}
+.text-active {
+  color: #09BB07;
+}
 </style>

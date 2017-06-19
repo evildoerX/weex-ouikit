@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: 'u-tabbar',
+  name: 'OTabbar',
   props: {
     value: {
       type: String
@@ -45,11 +45,11 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-@import "../theme-default/var.styl"
-.tabbar
-  position relative
-  flex-direction row
-  align-items center
-  background-color #fff
+<style lang="sass" scoped>
+.tabbar {
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+}
 </style>

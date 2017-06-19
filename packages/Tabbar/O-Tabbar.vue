@@ -1,7 +1,6 @@
 <template>
   <div class="tabbar"
     :style="{'background-color':backgroundcolor,'border-top-color':bordertopcolor}">
-    <slot></slot>
     <OTabbarItem
       v-for="item in tabbarItems"
       :key="item.index"
@@ -83,7 +82,7 @@ export default {
 </script>
 <style lang="sass" scoped>
 .tabbar {
-  position: absolute;
+  position: fixed;
   flex-direction: row;
   align-items: center;
   bottom: 0px;

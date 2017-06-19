@@ -1,12 +1,6 @@
 <template>
-  <div class="v-tabbar">
+  <div class="tabbar">
     <router-view></router-view>
-    <!--<OTabbar  :value="$route.path" router>
-      <OTabbarItem label="首页" index="/tabbar">&#xe7d5;</OTabbarItem>
-      <OTabbarItem label="购物车" index="/tabbar/cart">&#xe7d8;</OTabbarItem>
-      <OTabbarItem label="订单" index="/tabbar/order">&#xe6ac;</OTabbarItem>
-      <OTabbarItem label="我的" index="/tabbar/my">&#xe736;</OTabbarItem>
-    </OTabbar>-->
     <OTabbar
       :value="$route.path"
       router
@@ -21,7 +15,7 @@ export default {
       activeIndex: '1-2',
       tabItems: [
         {
-          index: '/tabbar',
+          index: '/button',
           label: '首页',
           titleColor: '#000000',
           nUrl: 'http://gtms01.alicdn.com/tps/i1/TB1qw.hMpXXXXagXXXX9t7RGVXX-46-46.png',

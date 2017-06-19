@@ -10,14 +10,12 @@
         :label="item.label"
         :defaultColor="tabdefaultColor"
         :activedColor="tabactivedColor"
-        :normalUrl="item.nlUrl"
+        :normalUrl="item.nUrl"
         :activeUrl="item.aUrl"
         :tabicon="item.icon"
         ></OTabbarItem>
   </div>
 </template>
-    // :defaultColor="${tabdefaultColor}"
-    //     :activedColor="${tabactivedColor}"
 <script>
 import OTabbarItem from './O-TabbarItem'
 export default {

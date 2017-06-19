@@ -24,8 +24,12 @@ export default {
     },
     index: String,
     // 图片模式的地址
-    normalUrl: String,
-    activeUrl: String,
+    normalUrl: {
+      default: ''
+    },
+    activeUrl: {
+      default: ''
+    },
     defaultColor: {
       default: '#999999'
     },
@@ -55,7 +59,7 @@ export default {
       return this.actived ? `color:${this.activedColor}` : `color:${this.defaultColor}`
     },
     img_actived () {
-      return this.actived ? normalUrl : activeUrl
+      return this.actived ? `${this.activeUrl}` : `${this.normalUrl}`
     },
     icon_actived () {
       return this.actived ? `${this.activedColor}` : `${this.defaultColor}`
@@ -93,25 +97,23 @@ export default {
 .tabbar-item {
   flex: 1;
   height: 108px;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top:10px;
 }
 .icon-font {
   font-size: 54px;
 }
 
 .icon-image {
-  max-width: 54px;
-  max-height: 54px;
+
+  width: 54px;
+  height: 54px;
+  margin-bottom: 5px;
 }
 
 .text {
-  color: #999999;
-  font-size: 22px;
-  line-height: 22px;
-}
-.text-active {
-  color: #09BB07;
+  font-size: 20px;
+  text-align: center;
 }
 </style>

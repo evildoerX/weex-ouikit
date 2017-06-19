@@ -11,6 +11,7 @@
       :value="$route.path"
       router
       :tabbarItems="tabItems"
+      imageType="image"
       defaultColor="black"
       activedColor="red"
       backgroundcolor="green"
@@ -28,7 +29,7 @@ export default {
           index: '/tabbar',
           label: '首页',
           titleColor: '#000000',
-          nlUrl: 'http://gtms01.alicdn.com/tps/i1/TB1qw.hMpXXXXagXXXX9t7RGVXX-46-46.png',
+          nUrl: 'http://gtms01.alicdn.com/tps/i1/TB1qw.hMpXXXXagXXXX9t7RGVXX-46-46.png',
           aUrl: 'http://gtms04.alicdn.com/tps/i4/',
           icon: '&#xe7d5'
         },
@@ -36,7 +37,7 @@ export default {
           index: '/tabbar/cart',
           label: '购物车',
           titleColor: '#000000',
-          nUrl: 'http://gtms01.alicdn.com/tps/i1/TB1qw.hMpXXXXagXXXX9t7RGVXX-46-46.png',
+          nUrl: 'http://gtms03.alicdn.com/tps/i3/TB1LEn9MpXXXXaUXpXX9t7RGVXX-46-46.png',
           aUrl: 'http://gtms04.alicdn.com/tps/i4/',
           icon: '&#xe7d8'
         },
@@ -44,7 +45,7 @@ export default {
           index: '/tabbar/order',
           label: '订单',
           titleColor: '#000000',
-          nUrl: 'http://gtms01.alicdn.com/tps/i1/TB1qw.hMpXXXXagXXXX9t7RGVXX-46-46.png',
+          nUrl: 'http://gtms01.alicdn.com/tps/i1/TB1B0v5MpXXXXcvXpXX9t7RGVXX-46-46.png',
           aUrl: 'http://gtms04.alicdn.com/tps/i4/',
           icon: '&#xe804'
         },

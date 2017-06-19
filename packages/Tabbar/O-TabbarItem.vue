@@ -3,7 +3,7 @@
     <slot v-if="!actived" name="normal"></slot>
     <slot v-else name="active"></slot>
     <OIcon v-if="!$slots.normal&&$parent&&$parent.imageType==='iconfont'"
-      class="icon-font"
+      size="54"
       :color="icon_actived"
       :iconID="tabicon"></OIcon>
     <image v-if="!$slots.normal&&$parent&&$parent.imageType==='image'"
@@ -101,12 +101,8 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.icon-font {
-  font-size: 54px;
-}
 
 .icon-image {
-
   width: 54px;
   height: 54px;
   margin-bottom: 5px;

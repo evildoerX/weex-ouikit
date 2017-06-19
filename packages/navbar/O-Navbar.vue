@@ -5,7 +5,7 @@
       <text v-if="!$slots.left">&nbsp;</text>
       <slot name="left"></slot>
     </div>
-    <text class="title"><slot></slot></text>
+    <text class="title">{{title}}</text>
     <div class="right">
       <text v-if="!$slots.right">&nbsp;</text>
       <slot v-else name="right"></slot>
@@ -20,32 +20,41 @@ export default {
       type: String,
       default: 'primary'
     },
-    bg: String
+    bg: String,
+    title: {
+      default: ''
+    }
   }
 }
 </script>
-<style lang="stylus" scoped>
-@import "../theme-default/var.styl"
-.header
-  flex-direction row
-  justify-content space-between
-  align-items center
-  height 88px
-  padding-left 20px
-  padding-right 20px
-.bg-primary
-  background-color $color-primary
-.left
-  flex-direction row
-  flex 1
-.right
-  flex-direction row
-  justify-content flex-end
-  flex 1
-.title
-  flex 4
-  color #fff
-  font-size 34px
-  font-weight 300
-  text-align center
+<style lang="sass" scoped>
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 92px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top:6px;
+  padding-bottom:6px;
+}
+.bg-primary {
+  background-color: #35495e;
+}
+.left{
+  flex-direction: row;
+  flex: 1;
+}
+.right {
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 1;
+}
+.title {
+  flex: 4;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
 </style>

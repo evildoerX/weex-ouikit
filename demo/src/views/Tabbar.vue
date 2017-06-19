@@ -10,12 +10,7 @@
     <OTabbar
       :value="$route.path"
       router
-      :tabbarItems="tabItems"
-      imageType="image"
-      defaultColor="black"
-      activedColor="red"
-      backgroundcolor="green"
-      bordertopcolor="red" >
+      :tabbarItems="tabItems">
     </OTabbar>
   </div>
 </template>

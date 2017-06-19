@@ -1,6 +1,5 @@
 <template>
-  <div
-    class="tabbar"
+  <div class="tabbar"
     :style="{'background-color':backgroundcolor,'border-top-color':bordertopcolor}">
     <slot></slot>
     <OTabbarItem
@@ -43,10 +42,10 @@ export default {
       default:'#D9D9D9'
     },
     defaultColor: {
-      default:''
+      default:'#999999'
     },
     activedColor: {
-      default:''
+      default:'#09BB07'
     }
   },
   components: {

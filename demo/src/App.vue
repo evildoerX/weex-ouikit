@@ -1,8 +1,10 @@
 <template>
   <div class="v-app" style="flex-direction:column;" :style="{height:appHeight}">
-    <ONavbar style="background-color:#35495e;" v-if="$route.path!=='/'">
+    <ONavbar
+      style="background-color:#35495e;"
+      :title="$store.getters.title"
+      v-if="$route.path!=='/'">
       <v-icon slot="left" color="#fff" @click="$router.go(-1)">&#xe621;</v-icon>
-        {{$store.getters.title}}
       <v-icon slot="right" color="#fff" @click="copy">&#xe666;</v-icon>
     </ONavbar>
      <!--<scroller style="flex:1;">-->

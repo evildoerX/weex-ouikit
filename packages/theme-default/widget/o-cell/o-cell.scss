@@ -20,14 +20,13 @@
     align-items: center;
     justify-content: center;
   }
-  .left-text {
+  .left_text {
     font-size: 34px;
+    color: black;
     font-family: 'Open Sans', sans-serif;
   }
   .left-textA {
-    font-size: 34px;
     margin-left: 10px;
-    font-family: 'Open Sans', sans-serif;
   }
   .left-tip {
     background-color: #f74c31;
@@ -44,7 +43,7 @@
     width: 50px;
     height: 50px;
   }
-  .text {
+  .valuetext {
     flex-direction: row;
     align-items: center;
     justify-content: center;

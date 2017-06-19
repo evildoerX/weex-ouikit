@@ -20,6 +20,7 @@
         dataRole="none"
         :height="navBarHeight"
         Title="提现"
+        TitleColor="#b2b2b2"
         showArrow
         Disabled
         @Click="Click">

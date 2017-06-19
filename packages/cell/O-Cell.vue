@@ -13,6 +13,7 @@
           class="left-image"></image>
         <text
           v-if="Title"
+          class="left_text"
           :style="{color:TitleColor}"
           :class="lefttext">{{Title}}</text>
         <text
@@ -22,7 +23,7 @@
       <text
           v-if="value"
           :style="{color:valueColor}"
-          class="text"
+          class="valuetext"
           :class="valuetext">{{value}}</text>
         <text
           v-if="showArrow"
@@ -54,7 +55,7 @@ export default {
     //左侧tips
     Tip: {default: '' },
     //左侧按钮颜色
-    TitleColor: { default: '' },
+    TitleColor: { default: 'black' },
     //右侧值
     value: { default: '' },
     //右侧值颜色

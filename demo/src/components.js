@@ -18,6 +18,7 @@ import OInLineLoading from 'packages/loading/O-InLineLoading'
 import OLoadingMore from 'packages/loading/O-LoadingMore'
 import OTabbar from 'packages/Tabbar/O-Tabbar'
 import OTabbarItem from 'packages/Tabbar/O-TabbarItem'
+import ONavbar from 'packages/navbar/O-Navbar'
 import VFont from './components/Iconfont'
 import VChecker from './components/Checker'
 import VRange from './components/Range'
@@ -41,6 +42,13 @@ import UCellGroup from 'packages/layout/CellGroup'
 import UCell from 'packages/layout/Cell'
 import UBadge from 'packages/others/Badge'
 
+Vue.component(OH1.name, OH1)
+Vue.component(OH2.name, OH2)
+Vue.component(OH4.name, OH4)
+Vue.component(OH3.name, OH3)
+Vue.component(OH5.name, OH5)
+Vue.component(OH6.name, OH6)
+Vue.component(OH7.name, OH7)
 Vue.component(OIcon.name, OIcon)
 Vue.component(OButton.name, OButton)
 Vue.component(OChecklist.name, OChecklist)
@@ -54,6 +62,8 @@ Vue.component(OInLineLoading.name, OInLineLoading)
 Vue.component(OLoadingMore.name, OLoadingMore)
 Vue.component(OTabbar.name, OTabbar)
 Vue.component(OTabbarItem.name, OTabbarItem)
+Vue.component(ONavbar.name, ONavbar)
+
 Vue.component(VFont.name, VFont)
 Vue.component(VChecker.name, VChecker)
 Vue.component(VRange.name, VRange)
@@ -63,13 +73,7 @@ Vue.component(VTimelineItem.name, VTimelineItem)
 Vue.component(UMask.name, UMask)
 Vue.component(USelectPopup.name, USelectPopup)
 Vue.component(ULoading.name, ULoading)
-Vue.component(OH1.name, OH1)
-Vue.component(OH2.name, OH2)
-Vue.component(OH4.name, OH4)
-Vue.component(OH3.name, OH3)
-Vue.component(OH5.name, OH5)
-Vue.component(OH6.name, OH6)
-Vue.component(OH7.name, OH7)
+
 Vue.component(URadio.name, URadio)
 Vue.component(UCheckbox.name, UCheckbox)
 Vue.component(USwitch.name, USwitch)

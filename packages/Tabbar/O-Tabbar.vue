@@ -4,16 +4,15 @@
     :style="{'background-color':backgroundcolor,'border-top-color':bordertopcolor}">
     <slot></slot>
     <OTabbarItem
-        v-for="item in tabbarItems"
-        :key="item.index"
-        :index="item.index"
-        :label="item.label"
-        :defaultColor="tabdefaultColor"
-        :activedColor="tabactivedColor"
-        :normalUrl="item.nUrl"
-        :activeUrl="item.aUrl"
-        :tabicon="item.icon"
-        ></OTabbarItem>
+      v-for="item in tabbarItems"
+      :key="item.index"
+      :index="item.index"
+      :label="item.label"
+      :defaultColor="tabdefaultColor"
+      :activedColor="tabactivedColor"
+      :normalUrl="item.nUrl"
+      :activeUrl="item.aUrl"
+      :tabicon="item.icon"></OTabbarItem>
   </div>
 </template>
 <script>

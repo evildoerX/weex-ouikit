@@ -2,31 +2,42 @@
   <div class="tabbar-item" @click="onClick">
     <slot v-if="!actived" name="normal"></slot>
     <slot v-else name="active"></slot>
-    <text v-if="!$slots.normal&&$parent&&$parent.imageType==='iconfont'"
-      class="icon-font" :class="[actived ? 'icon-font-active' : '']" :style="{fontFamily}"><slot></slot></text>
+    <OIcon v-if="!$slots.normal&&$parent&&$parent.imageType==='iconfont'"
+      class="icon-font"
+      :color="icon_actived"
+      :iconID="tabicon"></OIcon>
     <image v-if="!$slots.normal&&$parent&&$parent.imageType==='image'"
-      class="icon-image" :src="actived?normalUrl:activeUrl"></image>
-    <text class="text" :class="[actived ? 'text-active' : '']">{{label}}</text>
+      class="icon-image"
+      :src="img_actived"></image>
+    <text class="text"
+    :style="text_actived">{{label}}</text>
   </div>
 </template>
 <script>
+import OIcon from '../icon/O-Icon'
 const modal = weex.requireModule('modal')
 export default {
   name: 'OTabbarItem',
   props: {
     label: {
-      type: String,
-      required: true
+      default: ''
     },
     index: String,
     // 图片模式的地址
     normalUrl: String,
     activeUrl: String,
-    // iconfont模式的字体family
-    fontFamily: {
-      type: String,
-      default: 'iconfont'
+    defaultColor: {
+      default: '#999999'
+    },
+    activedColor: {
+      default: '#09BB07'
+    },
+    tabicon: {
+      default: '&#xe7d5'
     }
+  },
+  components: {
+    OIcon
   },
   data () {
     return {
@@ -36,6 +47,18 @@ export default {
   computed: {
     actived () {
       return this.$parent && this.$parent.value === this.index
+    },
+    // text_actived () {
+    //   return [this.actived ? 'text-active' : '']
+    // },
+    text_actived () {
+      return this.actived ? `color:${this.activedColor}` : `color:${this.defaultColor}`
+    },
+    img_actived () {
+      return this.actived ? normalUrl : activeUrl
+    },
+    icon_actived () {
+      return this.actived ? `${this.activedColor}` : `${this.defaultColor}`
     }
   },
   methods: {
@@ -69,26 +92,24 @@ export default {
 <style lang="sass" scoped>
 .tabbar-item {
   flex: 1;
-  height: 100px;
+  height: 108px;
   align-items: center;
   justify-content: center;
+  padding-top:10px;
 }
 .icon-font {
-  color: #999999;
-  font-size: 32px;
+  font-size: 54px;
 }
 
-.icon-font-active {
-  color: #09BB07;
-}
 .icon-image {
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 54px;
+  max-height: 54px;
 }
 
 .text {
   color: #999999;
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 22px;
 }
 .text-active {
   color: #09BB07;

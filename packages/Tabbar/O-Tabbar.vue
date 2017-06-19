@@ -1,12 +1,31 @@
 <template>
-  <div class="tabbar">
+  <div
+    class="tabbar"
+    :style="{'background-color':backgroundcolor,'border-top-color':bordertopcolor}">
     <slot></slot>
+    <OTabbarItem
+        v-for="item in tabbarItems"
+        :key="item.index"
+        :index="item.index"
+        :label="item.label"
+        :defaultColor="tabdefaultColor"
+        :activedColor="tabactivedColor"
+        :normalUrl="item.nlUrl"
+        :activeUrl="item.aUrl"
+        :tabicon="item.icon"
+        ></OTabbarItem>
   </div>
 </template>
+    // :defaultColor="${tabdefaultColor}"
+    //     :activedColor="${tabactivedColor}"
 <script>
+import OTabbarItem from './O-TabbarItem'
 export default {
   name: 'OTabbar',
   props: {
+    tabbarItems: {
+      default: []
+    },
     value: {
       type: String
     },
@@ -19,12 +38,33 @@ export default {
       type: String,
       // 支持iconfont image, svg模式不好处理子节点的颜色，此时可以用slot处理
       default: 'iconfont'
+    },
+    backgroundcolor: {
+      default:'#F7F7FA'
+    },
+    bordertopcolor: {
+      default:'#D9D9D9'
+    },
+    defaultColor: {
+      default:''
+    },
+    activedColor: {
+      default:''
     }
+  },
+  components: {
+    OTabbarItem
   },
   data () {
     return {
-      bars: []
+      bars: [],
+      tabdefaultColor:'',
+      tabactivedColor:''
     }
+  },
+  created() {
+    this.tabdefaultColor = this.defaultColor,
+    this.tabactivedColor = this.activedColor
   },
   computed: {
     activeIndex () {
@@ -47,9 +87,13 @@ export default {
 </script>
 <style lang="sass" scoped>
 .tabbar {
-  position: relative;
+  position: absolute;
   flex-direction: row;
   align-items: center;
-  background-color: #fff;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-top-style: solid;
+  border-top-width: 1px;
 }
 </style>

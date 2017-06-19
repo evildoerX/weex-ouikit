@@ -1,8 +1,9 @@
 <template>
-  <text :style="style" ><slot></slot></text>
+  <text :style="style" >{{getFontName}}</text>
 </template>
 <script>
 const domModule = weex.requireModule('dom')
+var he = require('he');
 export default {
   name: 'OIcon',
   props: {
@@ -13,6 +14,9 @@ export default {
     color: {
       type: String,
       default: '#667180'
+    },
+    iconID: {
+      default: '&#xe64d'
     }
   },
   computed: {
@@ -22,6 +26,9 @@ export default {
         color: this.color,
         fontSize: `${this.size}px`
       }
+    },
+    getFontName: function() {
+      return he.decode(this.iconID)
     }
   },
   // methods: {

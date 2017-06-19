@@ -27,7 +27,6 @@ import VTimelineItem from './components/TimelineItem'
 import UMask from 'packages/common/Mask'
 import USelectPopup from 'packages/common/SelectPopup'
 import ULoading from 'packages/common/Loading'
-
 import URadio from 'packages/form/Radio'
 import UCheckbox from 'packages/form/Checkbox'
 import USwitch from 'packages/form/Switch'
@@ -37,8 +36,6 @@ import USelect from 'packages/form/Select'
 import OHeader from 'packages/navigation/Header'
 import UTabs from 'packages/navigation/Tabs'
 import UTab from 'packages/navigation/Tab'
-import UTabbar from 'packages/navigation/Tabbar'
-import UTabbarItem from 'packages/navigation/TabbarItem'
 import UProgress from 'packages/data/Progress'
 import UCellGroup from 'packages/layout/CellGroup'
 import UCell from 'packages/layout/Cell'
@@ -82,8 +79,6 @@ Vue.component(USelect.name, USelect)
 Vue.component(OHeader.name, OHeader)
 Vue.component(UTabs.name, UTabs)
 Vue.component(UTab.name, UTab)
-Vue.component(UTabbar.name, UTabbar)
-Vue.component(UTabbarItem.name, UTabbarItem)
 Vue.component(UProgress.name, UProgress)
 Vue.component(UCellGroup.name, UCellGroup)
 Vue.component(UCell.name, UCell)

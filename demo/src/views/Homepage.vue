@@ -6,57 +6,57 @@
     <div class="content">
       <div class="grid-row">
         <div class="grid-cell" @click="jump('/color')">
-          <OIcon size="46" color="#04be02" iconID="&#xe6d0"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe6d0;</OIcon>
           <text class="text">颜色</text></div>
         <div class="grid-cell" @click="jump('/text')">
-          <OIcon size="46" color="#04be02" iconID="&#xe692"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe692;</OIcon>
           <text class="text">文本</text></div>
         <div class="grid-cell" @click="jump('/iconfont')">
-          <OIcon size="46" color="#04be02" iconID="&#xe74e"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe74e;</OIcon>
           <text class="text">iconfont</text></div>
       </div>
       <div class="grid-row">
         <div class="grid-cell" @click="jump('/button')">
-          <OIcon size="46" color="#04be02" iconID="&#xe72f"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe72f;</OIcon>
           <text class="text">按钮</text></div>
         <div class="grid-cell" @click="jump('/radio')">
-          <OIcon size="46" color="#04be02" iconID="&#xe627"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe627;</OIcon>
           <text class="text">单选</text></div>
         <div class="grid-cell" @click="jump('/checkbox')">
-          <OIcon size="46" color="#04be02" iconID="&#xe72e"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe72e;</OIcon>
           <text class="text">多选</text></div>
       </div>
       <div class="grid-row">
         <div class="grid-cell" @click="jump('/cell')">
-          <OIcon size="46" color="#04be02" iconID="&#xe60a"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe60a;</OIcon>
           <text class="text">列表</text></div>
         <div class="grid-cell" @click="jump('/input-number')">
-          <OIcon size="46" color="#04be02" iconID="&#xe6e6;"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe6e6;</OIcon>
           <text class="text">数字选择</text></div>
         <div class="grid-cell" @click="jump('/badge')">
-          <OIcon size="46" color="red" iconID="&#xe632;"></OIcon>
+          <OIcon size="46" color="red" >&#xe632;</OIcon>
           <text class="text">Badge</text></div>
       </div>
       <div class="grid-row">
         <div class="grid-cell" @click="jump('/loading')">
-          <OIcon size="46" color="#04be02" iconID="&#xe6a1;"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe6a1;</OIcon>
           <text class="text">Loading</text></div>
         <div class="grid-cell" @click="jump('/inlineloading')">
-          <OIcon size="46" color="#04be02" iconID="&#xe6a1;"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe6a1;</OIcon>
           <text class="text">InLineLoading</text></div>
         <div class="grid-cell" @click="jump('/loadingmore')">
-          <OIcon size="46" color="#04be02" iconID="&#xe6a1;"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe6a1;</OIcon>
           <text class="text">LoadingMore</text></div>
       </div>
       <div class="grid-row">
         <div class="grid-cell" @click="jump('/tabbar')">
-          <OIcon size="46" color="#04be02" iconID="&#xe754;"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe754;</OIcon>
           <text class="text">Tabbar</text></div>
         <div class="grid-cell" @click="jump('/tab')">
-          <OIcon size="46" color="#04be02" iconID="&#xe8ed;"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe8ed;</OIcon>
           <text class="text">Navbar</text></div>
         <div class="grid-cell" @click="jump('/tab')">
-          <OIcon size="46" color="#04be02" iconID="&#xe60c;"></OIcon>
+          <OIcon size="46" color="#04be02" >&#xe60c;</OIcon>
           <text class="text">Tabs</text></div>
       </div>
       <!--<div class="grid-row">
@@ -152,6 +152,6 @@ export default {
   border-color: #c7c7c7;
 }
 .text {
-  font-size: 30px;
+  font-size: 28px;
 }
 </style>

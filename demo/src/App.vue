@@ -5,9 +5,9 @@
         {{$store.getters.title}}
       <v-icon slot="right" color="#fff" @click="copy">&#xe666;</v-icon>
     </ONavbar>
-     <scroller style="flex:1;">
+     <!--<scroller style="flex:1;">-->
       <router-view></router-view>
-     </scroller>
+     <!--</scroller>-->
   </div>
 </template>
 <script>

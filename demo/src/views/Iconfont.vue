@@ -1,81 +1,24 @@
 <template>
-  <div class="v-iconfonts">
-    <OIcon></OIcon>
+  <div class="OIconfonts">
     <div class="icon-row">
       <div class="icon-cell">
-        <v-icon>&#xe6d0</v-icon>
+        <OIcon size="100" iconID="&#xe7d5;"></OIcon>
       </div>
       <div class="icon-cell">
-        <v-icon>&#xe659;</v-icon>
+        <OIcon size="100" iconID="&#xe7d6;"></OIcon>
       </div>
       <div class="icon-cell">
-        <v-icon>&#xe665;</v-icon>
+        <OIcon size="100" iconID="&#xe7d8;"></OIcon>
       </div>
       <div class="icon-cell">
-        <v-icon>&#xe657;</v-icon>
-      </div>
-    </div>
-    <div class="icon-row">
-      <div class="icon-cell">
-        <v-icon>&#xe621;</v-icon>
-      </div>
-      <div class="icon-cell">
-        <v-icon>&#xe687;</v-icon>
-      </div>
-      <div class="icon-cell">
-        <v-icon>&#xe666;</v-icon>
-      </div>
-      <div class="icon-cell">
-        <v-icon>&#xe656;</v-icon>
-      </div>
-    </div>
-    <div class="icon-row">
-      <div class="icon-cell">
-        <v-icon>&#xe655;</v-icon>
-      </div>
-      <div class="icon-cell">
-        <v-icon>&#xe651;</v-icon>
-      </div>
-      <div class="icon-cell">
-        <v-icon>&#xe650;</v-icon>
-      </div>
-      <div class="icon-cell">
-        <v-icon>&#xe64e;</v-icon>
-      </div>
-    </div>
-    <div class="icon-row">
-      <div class="icon-cell">
-        <v-icon>&#xe645;</v-icon>
-      </div>
-      <div class="icon-cell">
-        <v-icon>&#xe642;</v-icon>
-      </div>
-      <div class="icon-cell">
-        <v-icon>&#xe63f;</v-icon>
-      </div>
-      <div class="icon-cell">
-        <v-icon>&#xe712;</v-icon>
-      </div>
-    </div>
-    <div class="icon-row">
-      <div class="icon-cell">
-        <v-icon>&#xe673;</v-icon>
-      </div>
-      <div class="icon-cell">
-        <v-icon>&#xe674;</v-icon>
-      </div>
-      <div class="icon-cell">
-        <v-icon>&#xe870;</v-icon>
-      </div>
-      <div class="icon-cell">
-        <v-icon>&#xe86f;</v-icon>
+        <OIcon size="100" iconID="&#xe7d7;"></OIcon>
       </div>
     </div>
   </div>
 </template>
 <style lang="stylus" scoped>
 @import "../../../packages/theme-default/var.styl"
-.v-iconfonts
+.OIconfonts
   padding 20px
 .icon-row
   flex-direction row

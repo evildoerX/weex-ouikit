@@ -1,9 +1,12 @@
 <template>
   <div class="input-field">
-    <div v-if="$slots.left" class="left">
-      <slot name="left"></slot>
+    <div v-if="$slots.left_text" class="left_text">
+      <slot name="left_text"></slot>
     </div>
-    <input class="input" :class="[!!$slots.left ? 'with-left' : '', !!$slots.right ? 'with-right': '']"
+    <div v-if="$slots.left_icon" class="left_icon">
+      <slot name="left_icon"></slot>
+    </div>
+    <input class="input" :class="[!!$slots.left_text ? 'with-left_text' : '',!!$slots.left_icon ? 'with-left_icon' : '', !!$slots.right ? 'with-right': '']"
       :type="type" :placeholder="placeholder" :value="inputVal"
       @input="handleInput"
       @change="e=>$emit('change', e)"
@@ -19,7 +22,7 @@
 </template>
 <script>
 export default {
-  name: 'u-input',
+  name: 'OInput',
   props: {
     type: String,
     value: String,
@@ -48,46 +51,63 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-@import "../theme-default/var.styl"
-$input-height = 88
-.input-field
-  position relative
-  justify-content center
-.left
-  position absolute
-  left 0
-  top 0
-  width ($input-height)px
-  height @width
-  align-items center
-  justify-content center
-.right
-  position absolute
-  right 0
-  top 0
-  width ($input-height)px
-  height @width
-  align-items center
-  justify-content center
-.input
-  padding-left 20px
-  padding-right 20px
-  height ($input-height)px
-  font-size 34px
-  border-radius 4px
-  border-color $color-disabled
-  border-width 1px
-  border-style solid
-.with-left
-  padding-left ($input-height)px
-.with-right
-  padding-right ($input-height)px
-.input:focus
-.input:active
-  border-color $color-primary
-  color $color-primary
-  placeholder-color $color-primary
-.input:focus::-webkit-input-placeholder
-  color $color-primary
+<style lang="sass" scoped>
+.input-field {
+  position: relative;
+  justify-content: center;
+  padding-left: 30px;
+  background-color: #fff;
+}
+.left_text {
+  position: absolute;
+  left: 30;
+  top: 0;
+  width: 140px;
+  height: 88px;
+  align-items: center;
+  justify-content: center;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.left_icon {
+  position: absolute;
+  left: 30;
+  top: 0;
+  width: 88px;
+  height: 88px;
+  align-items: center;
+  justify-content: center;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 226px;
+  height: 88px;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  height: 88px;
+  font-size: 34px;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-color: #E5E5E5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.with-left_text {
+  padding-left: 180px;
+}
+.with-left_icon {
+  padding-left: 90px;
+}
+.with-right {
+  padding-right: 88px;
+}
 </style>

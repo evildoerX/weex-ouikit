@@ -1,5 +1,5 @@
 <template>
-    <text class="o-btn" :class="classes" @click="click" @longpress="longpress">
+    <text class="o-btn" :class="classes" :style="{width:`${btnWidth}px`,color:btncolor}" @click="click" @longpress="longpress">
       <slot></slot>
     </text>
 </template>
@@ -19,7 +19,13 @@
       //方角还是圆角，默认方角
       angle: Boolean,
       //幽灵还是非幽灵
-      plant:Boolean
+      plant:Boolean,
+      btnWidth: {
+        default: ''
+      },
+      btncolor: {
+        default: ''
+      }
     },
     computed: {
       classes () {

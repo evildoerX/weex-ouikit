@@ -62,9 +62,9 @@
       <div class="grid-cell" @click="jump('/switch')">
         <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
         <text class="text">switch</text></div>
-      <div class="grid-cell" @click="jump('/checker')">
+      <div class="grid-cell" @click="jump('/mask')">
         <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">全选</text></div>
+        <text class="text">mask</text></div>
       <div class="grid-cell" @click="jump('/rater')">
         <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
         <text class="text">评分</text></div>

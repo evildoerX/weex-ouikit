@@ -26,6 +26,7 @@ import InLineLoading from './views/InLineLoading'
 import LoadingMore from './views/LoadingMore'
 import Navbar from './views/Navbar'
 import Switch from './views/Switch'
+import Mask from './views/Mask'
 import store from './store'
 Vue.use(Router)
 
@@ -71,7 +72,8 @@ const router = new Router({
     { path: '/inlineloading', component: InLineLoading },
     { path: '/loadingmore', component: LoadingMore },
     { path: '/navbar', component: Navbar },
-    { path: '/switch', component: Switch }
+    { path: '/switch', component: Switch },
+    { path: '/mask', component: Mask }
   ]
 })
 

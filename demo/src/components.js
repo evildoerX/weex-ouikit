@@ -25,7 +25,6 @@ import OTab from 'packages/Tab/Tab'
 import ORater from 'packages/rater/Rater'
 import OSwitch from 'packages/switch/Switch'
 
-import VFont from './components/Iconfont'
 import VChecker from './components/Checker'
 import VRange from './components/Range'
 
@@ -33,15 +32,9 @@ import VTimeline from './components/Timeline'
 import VTimelineItem from './components/TimelineItem'
 import UMask from 'packages/common/Mask'
 import USelectPopup from 'packages/common/SelectPopup'
-import ULoading from 'packages/common/Loading'
-import URadio from 'packages/form/Radio'
-import UCheckbox from 'packages/form/Checkbox'
 import UInput from 'packages/form/Input'
-import UInputNumber from 'packages/form/InputNumber'
 import USelect from 'packages/form/Select'
 import UProgress from 'packages/data/Progress'
-import UCellGroup from 'packages/layout/CellGroup'
-import UCell from 'packages/layout/Cell'
 
 Vue.component(OH1.name, OH1)
 Vue.component(OH2.name, OH2)
@@ -68,23 +61,16 @@ Vue.component(ONavbar.name, ONavbar)
 Vue.component(OTabs.name, OTabs)
 Vue.component(OTab.name, OTab)
 Vue.component(OSwitch.name, OSwitch)
+Vue.component(ORater.name, ORater)
 
-Vue.component(VFont.name, VFont)
 Vue.component(VChecker.name, VChecker)
 Vue.component(VRange.name, VRange)
-Vue.component(ORater.name, ORater)
 Vue.component(VTimeline.name, VTimeline)
 Vue.component(VTimelineItem.name, VTimelineItem)
 Vue.component(UMask.name, UMask)
 Vue.component(USelectPopup.name, USelectPopup)
-Vue.component(ULoading.name, ULoading)
 
-Vue.component(URadio.name, URadio)
-Vue.component(UCheckbox.name, UCheckbox)
 Vue.component(UInput.name, UInput)
-Vue.component(UInputNumber.name, UInputNumber)
 Vue.component(USelect.name, USelect)
 
 Vue.component(UProgress.name, UProgress)
-Vue.component(UCellGroup.name, UCellGroup)
-Vue.component(UCell.name, UCell)

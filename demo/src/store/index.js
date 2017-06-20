@@ -2,7 +2,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
-    title: 'weex-uikit',
+    title: 'weex-Ouikit',
     mask: {
       show: false,
       justify: 'center'

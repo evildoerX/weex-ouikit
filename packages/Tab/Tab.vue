@@ -6,7 +6,7 @@
 <script>
 const modal = weex.requireModule('modal')
 export default {
-  name: 'u-tab',
+  name: 'OTab',
   props: {
     label: {
       type: String,
@@ -29,11 +29,11 @@ export default {
   },
   created () {
     let parent = this.$parent
-    while (parent.$parent && parent.$options._componentTag !== 'u-tabs') {
+    while (parent.$parent && parent.$options._componentTag !== 'OTabs') {
       parent = parent.$parent
     }
-    if (parent.$options._componentTag !== 'u-tabs') {
-      modal.toast({ message: 'u-tab不能单独使用', duration: 0.3 })
+    if (parent.$options._componentTag !== 'OTabs') {
+      modal.toast({ message: 'OTabs不能单独使用', duration: 0.3 })
       return
     }
     this.$parent = parent

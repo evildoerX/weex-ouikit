@@ -20,6 +20,8 @@ import OLoadingMore from 'packages/loading/O-LoadingMore'
 import OTabbar from 'packages/Tabbar/O-Tabbar'
 import OTabbarItem from 'packages/Tabbar/O-TabbarItem'
 import ONavbar from 'packages/navbar/O-Navbar'
+import OTabs from 'packages/Tab/Tabs'
+import OTab from 'packages/Tab/Tab'
 import VFont from './components/Iconfont'
 import VChecker from './components/Checker'
 import VRange from './components/Range'
@@ -35,9 +37,6 @@ import USwitch from 'packages/form/Switch'
 import UInput from 'packages/form/Input'
 import UInputNumber from 'packages/form/InputNumber'
 import USelect from 'packages/form/Select'
-import OHeader from 'packages/navigation/Header'
-import UTabs from 'packages/navigation/Tabs'
-import UTab from 'packages/navigation/Tab'
 import UProgress from 'packages/data/Progress'
 import UCellGroup from 'packages/layout/CellGroup'
 import UCell from 'packages/layout/Cell'
@@ -65,6 +64,8 @@ Vue.component(OLoadingMore.name, OLoadingMore)
 Vue.component(OTabbar.name, OTabbar)
 Vue.component(OTabbarItem.name, OTabbarItem)
 Vue.component(ONavbar.name, ONavbar)
+Vue.component(OTabs.name, OTabs)
+Vue.component(OTab.name, OTab)
 
 Vue.component(VFont.name, VFont)
 Vue.component(VChecker.name, VChecker)
@@ -82,9 +83,7 @@ Vue.component(USwitch.name, USwitch)
 Vue.component(UInput.name, UInput)
 Vue.component(UInputNumber.name, UInputNumber)
 Vue.component(USelect.name, USelect)
-Vue.component(OHeader.name, OHeader)
-Vue.component(UTabs.name, UTabs)
-Vue.component(UTab.name, UTab)
+
 Vue.component(UProgress.name, UProgress)
 Vue.component(UCellGroup.name, UCellGroup)
 Vue.component(UCell.name, UCell)

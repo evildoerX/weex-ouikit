@@ -13,7 +13,7 @@
 const animation = weex.requireModule('animation')
 const dom = weex.requireModule('dom')
 export default {
-  name: 'u-tabs',
+  name: 'OTabs',
   props: {
     value: {
       type: [String, Number, Boolean, Object, Array],

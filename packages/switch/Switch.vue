@@ -37,9 +37,10 @@ export default {
     change () {
       if (!this.disabled) {
         const targetValue = this.checked ? this.falseValue : this.trueValue
+        console.log(targetValue)
         animation.transition(this.$refs.icon, {
           styles: {
-            transform: `translateX(${this.checked ? '100%' : '0'})`
+            transform: `translateX(${this.checked ? '0' : '100%'})`
           },
           duration: 300, //ms
           timingFunction: 'ease',
@@ -55,7 +56,7 @@ export default {
       if (this.checked) {
         animation.transition(this.$refs.icon, {
           styles: {
-            transform: 'translateX(0)'
+            transform: 'translateX(100%)'
           },
           duration: 0, //ms
           delay: 0 //ms
@@ -76,7 +77,11 @@ $switch-large-border = 6px
 .switch
   flex-direction row
   align-items center
-  background-color $color-text-minor
+  background-color #fff
+  border-color #dfdfdf
+  border-style solid
+  border-width 2px
+
 // size
 .sz-small
   min-width ($switch-small-height * 2)px
@@ -91,16 +96,16 @@ $switch-large-border = 6px
   height ($switch-large-height)px
   border-radius ($switch-large-height / 2)px
 .checked
-  background-color $color-primary
+  background-color #04be02
 .disabled
   background-color $color-disabled
 .icon
   background-color #fff
   border-style solid
-  border-color $color-text-minor
-  transform translateX(100%)
+  border-color #dfdfdf
+  transform translateX(0)
 .icon-checked
-  border-color $color-primary
+  border-color #04be02
 .icon-disabled
   border-color $color-disabled
 // circle size
@@ -117,11 +122,11 @@ $switch-large-border = 6px
 .isz-large
   width ($switch-large-height)px
   height @width
-  border-width $switch-large-border
+  border-width 3px;
   border-radius ($switch-large-height / 2)px
 .text
-  color $color-text-primary
-  margin-left 40px
+  color #fff
+  margin-left 0px
 .text-disabled
   color $color-text-disabled
 </style>

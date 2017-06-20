@@ -1,5 +1,5 @@
 <template>
-  <text :style="style" @click="click" @longpress="longpress">{{getFontName}}</text>
+  <text :style="style" >{{getFontName}}</text>
 </template>
 <script>
 const domModule = weex.requireModule('dom')
@@ -31,14 +31,14 @@ export default {
       return he.decode(this.iconID)
     }
   },
-  methods: {
-    click (e) {
-      this.$emit('click', e)
-    },
-    longpress (e) {
-      this.$emit('longpress', e)
-    }
-  },
+  // methods: {
+  //   click (e) {
+  //     this.$emit('click', e)
+  //   },
+  //   longpress (e) {
+  //     this.$emit('longpress', e)
+  //   }
+  // },
   created () {
     domModule.addRule('fontFace', {
       'fontFamily': 'iconfont',

@@ -2,10 +2,10 @@
   <div class="tabbar-item" @click="onClick">
     <slot v-if="!actived" name="normal"></slot>
     <slot v-else name="active"></slot>
-    <OIcon v-if="!$slots.normal&&$parent&&$parent.imageType==='iconfont'"
+    <CIcon v-if="!$slots.normal&&$parent&&$parent.imageType==='iconfont'"
       size="54"
       :color="icon_actived"
-      :iconID="tabicon"></OIcon>
+      :iconID="tabicon"></CIcon>
     <image v-if="!$slots.normal&&$parent&&$parent.imageType==='image'"
       class="icon-image"
       :src="img_actived"></image>
@@ -14,7 +14,7 @@
   </div>
 </template>
 <script>
-import OIcon from '../icon/O-Icon'
+import CIcon from '../icon/C-Icon'
 const modal = weex.requireModule('modal')
 export default {
   name: 'OTabbarItem',
@@ -41,7 +41,7 @@ export default {
     }
   },
   components: {
-    OIcon
+    CIcon
   },
   data () {
     return {

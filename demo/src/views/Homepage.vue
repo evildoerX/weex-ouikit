@@ -73,10 +73,10 @@
     <div class="grid-row">
       <div class="grid-cell" @click="jump('/input')">
         <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
-        <text class="text">输入框(待优化)</text></div>
+        <text class="text">输入框</text></div>
       <div class="grid-cell" @click="jump('/select')">
         <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
-        <text class="text">下拉(待优化)</text></div>
+        <text class="text">下拉</text></div>
       <div class="grid-cell" @click="jump('/timeline')">
         <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
         <text class="text">轮播图</text></div>
@@ -122,9 +122,9 @@
       <div class="grid-cell" @click="jump('/select')">
         <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
         <text class="text">用户信息</text></div>
-      <div class="grid-cell" @click="jump('/timeline')">
+      <div class="grid-cell" @click="jump('/goods')">
         <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
-        <text class="text">中餐馆组件库</text></div>
+        <text class="text">商品类组件库</text></div>
     </div>
   </div>
 </template>

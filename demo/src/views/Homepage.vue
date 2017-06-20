@@ -58,6 +58,17 @@
         <CIcon size="46" color="#04be02" iconID="&#xe60c"></CIcon>
         <text class="text">Tabs</text></div>
     </div>
+    <div class="grid-row">
+      <div class="grid-cell" @click="jump('/switch')">
+        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
+        <text class="text">switch</text></div>
+      <div class="grid-cell" @click="jump('/checker')">
+        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
+        <text class="text">全选</text></div>
+      <div class="grid-cell" @click="jump('/rater')">
+        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
+        <text class="text">评分</text></div>
+    </div>
     <!--<div class="grid-row">
       <div class="grid-cell" @click="jump('/input')">
         <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>

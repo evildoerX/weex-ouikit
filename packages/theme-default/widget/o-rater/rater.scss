@@ -1,0 +1,17 @@
+.rate {
+  flex-direction: row;
+}
+.rate-icon-wrapper {
+  position: relative;
+}
+.rate-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 50px;
+}
+.rate-icon-rem {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}

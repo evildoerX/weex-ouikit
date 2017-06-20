@@ -22,10 +22,12 @@ import OTabbarItem from 'packages/Tabbar/O-TabbarItem'
 import ONavbar from 'packages/navbar/O-Navbar'
 import OTabs from 'packages/Tab/Tabs'
 import OTab from 'packages/Tab/Tab'
+import ORater from 'packages/rater/Rater'
+
 import VFont from './components/Iconfont'
 import VChecker from './components/Checker'
 import VRange from './components/Range'
-import VRater from './components/Rater'
+
 import VTimeline from './components/Timeline'
 import VTimelineItem from './components/TimelineItem'
 import UMask from 'packages/common/Mask'
@@ -40,7 +42,6 @@ import USelect from 'packages/form/Select'
 import UProgress from 'packages/data/Progress'
 import UCellGroup from 'packages/layout/CellGroup'
 import UCell from 'packages/layout/Cell'
-import UBadge from 'packages/others/Badge'
 
 Vue.component(OH1.name, OH1)
 Vue.component(OH2.name, OH2)
@@ -70,7 +71,7 @@ Vue.component(OTab.name, OTab)
 Vue.component(VFont.name, VFont)
 Vue.component(VChecker.name, VChecker)
 Vue.component(VRange.name, VRange)
-Vue.component(VRater.name, VRater)
+Vue.component(ORater.name, ORater)
 Vue.component(VTimeline.name, VTimeline)
 Vue.component(VTimelineItem.name, VTimelineItem)
 Vue.component(UMask.name, UMask)
@@ -87,4 +88,3 @@ Vue.component(USelect.name, USelect)
 Vue.component(UProgress.name, UProgress)
 Vue.component(UCellGroup.name, UCellGroup)
 Vue.component(UCell.name, UCell)
-Vue.component(UBadge.name, UBadge)

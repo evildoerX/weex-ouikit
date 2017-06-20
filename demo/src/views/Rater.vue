@@ -1,10 +1,10 @@
 <template>
   <div class="v-rates">
     <div class="cell">
-      <v-rater :value="rate1" @input="v=>rate1=v"></v-rater>
+      <ORater :value="rate1" @input="v=>rate1=v"></ORater>
     </div>
     <div class="cell">
-      <v-rater :max="10" :value="rate2"></v-rater>
+      <ORater :max="10" :value="rate2" @input="v=>rate2=v"></ORater>
     </div>
   </div>
 </template>
@@ -13,7 +13,7 @@ export default {
   data () {
     return {
       rate1: 0,
-      rate2: 3.4
+      rate2: 4.4
     }
   }
 }

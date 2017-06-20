@@ -23,6 +23,7 @@ import ONavbar from 'packages/navbar/O-Navbar'
 import OTabs from 'packages/Tab/Tabs'
 import OTab from 'packages/Tab/Tab'
 import ORater from 'packages/rater/Rater'
+import OSwitch from 'packages/switch/Switch'
 
 import VFont from './components/Iconfont'
 import VChecker from './components/Checker'
@@ -35,7 +36,6 @@ import USelectPopup from 'packages/common/SelectPopup'
 import ULoading from 'packages/common/Loading'
 import URadio from 'packages/form/Radio'
 import UCheckbox from 'packages/form/Checkbox'
-import USwitch from 'packages/form/Switch'
 import UInput from 'packages/form/Input'
 import UInputNumber from 'packages/form/InputNumber'
 import USelect from 'packages/form/Select'
@@ -67,6 +67,7 @@ Vue.component(OTabbarItem.name, OTabbarItem)
 Vue.component(ONavbar.name, ONavbar)
 Vue.component(OTabs.name, OTabs)
 Vue.component(OTab.name, OTab)
+Vue.component(OSwitch.name, OSwitch)
 
 Vue.component(VFont.name, VFont)
 Vue.component(VChecker.name, VChecker)
@@ -80,7 +81,6 @@ Vue.component(ULoading.name, ULoading)
 
 Vue.component(URadio.name, URadio)
 Vue.component(UCheckbox.name, UCheckbox)
-Vue.component(USwitch.name, USwitch)
 Vue.component(UInput.name, UInput)
 Vue.component(UInputNumber.name, UInputNumber)
 Vue.component(USelect.name, USelect)

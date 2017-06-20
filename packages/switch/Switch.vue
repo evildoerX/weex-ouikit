@@ -7,7 +7,7 @@
 <script>
 const animation = weex.requireModule('animation')
 export default {
-  name: 'u-switch',
+  name: 'OSwitch',
   props: {
     value: [String, Number, Boolean, Object, Array],
     trueValue: {

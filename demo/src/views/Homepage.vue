@@ -60,13 +60,13 @@
     </div>
     <div class="grid-row">
       <div class="grid-cell" @click="jump('/switch')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
+        <CIcon size="46" color="#04be02" iconID="&#xed3d;"></CIcon>
         <text class="text">switch</text></div>
       <div class="grid-cell" @click="jump('/mask')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
+        <CIcon size="46" color="#04be02" iconID="&#xe608;"></CIcon>
         <text class="text">mask</text></div>
       <div class="grid-cell" @click="jump('/rater')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
+        <CIcon size="46" color="#04be02" iconID="&#xe7f1;"></CIcon>
         <text class="text">评分</text></div>
     </div>
     <!--<div class="grid-row">

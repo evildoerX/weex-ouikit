@@ -1,10 +1,9 @@
 <template>
-  <div class="v-tabs">
+  <div class="otabs">
     <OTabs :value="tab1" @input="v=>tab1=v">
-      <OTab label="新闻" value="news"><text>新闻。。。</text></OTab>
-      <OTab label="娱乐" value="entertainment"><text>娱乐。。。</text></OTab>
-      <OTab label="八卦" value="gossip"><text>八卦。。。</text></OTab>
-      <OTab label="体育" value="sport"><text>体育。。。</text></OTab>
+      <OTab label="已发货" value="one"><text>已发货...</text></OTab>
+      <OTab label="未发货" value="two"><text>未发货...</text></OTab>
+      <OTab label="全部订单" value="third"><text>全部订单...</text></OTab>
     </OTabs>
   </div>
 </template>
@@ -12,12 +11,16 @@
 export default {
   data () {
     return {
-      tab1: 'news'
+      tab1: 'one'
     }
   }
 }
 </script>
-<style lang="stylus" scoped>
-.v-tabs
-  padding 20px
+<style lang="sass" scoped>
+.otabs {
+  margin-top:20px;
+}
+.title {
+  padding:20px;
+}
 </style>

@@ -69,28 +69,6 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-@import "../theme-default/var.styl"
-$tab-height = 88px
-.tab-nav
-  position relative
-  flex-direction row
-  height $tab-height
-.tab
-  flex 1
-  height $tab-height
-  line-height $tab-height
-  font-size 30px
-  text-align center
-  color $color-text-highlight
-.tab-active
-  color $color-primary
-.line
-  position absolute
-  bottom 0
-  left 0
-  height 4px
-  background-color $color-primary
-.tab-content
-  padding-top 20px
+<style lang="sass" scoped>
+@import '../theme-default/widget/o-tab/o-tabs'
 </style>

@@ -1,0 +1,29 @@
+.tab-nav {
+  position: relative;
+  flex-direction: row;
+  height: 88px;
+  border-bottom-color: #e5e5e5;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.tab {
+  flex: 1;
+  height: 88px;
+  line-height: 88px;
+  font-size: 28px;
+  text-align: center;
+  color: #666;
+}
+.tab-active {
+  color: #04be02;
+}
+.line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #04be02;
+}
+.tab-content {
+  padding-top: 20px;
+}

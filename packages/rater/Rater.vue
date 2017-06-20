@@ -1,8 +1,8 @@
 <template>
   <div class="rate">
     <div v-for="n in max" class="rate-icon-wrapper">
-      <OIcon class="rate-icon" :color="n <= value?'#ffd56c':'#ccc'" @click="select(n)" :iconID="n <= value? fullStar : emptyStar"></OIcon>
-      <OIcon v-if="remWidth>0&&n>value&&n-1<value" class="rate-icon rate-icon-rem"
+      <OIcon size="50" class="rate-icon" :color="n <= value?'#ffd56c':'#ccc'" @click="select(n)" :iconID="n <= value? fullStar : emptyStar"></OIcon>
+      <OIcon size="50" v-if="remWidth>0&&n>value&&n-1<value" class="rate-icon rate-icon-rem"
         color="#ffd56c" :style="{width:`${remWidth*0.36}px`}" @click="select(n)" :iconID="fullStar"></OIcon>
     </div>
   </div>

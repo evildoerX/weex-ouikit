@@ -56,7 +56,7 @@ export default {
     //   return [this.actived ? 'text-active' : '']
     // },
     text_actived () {
-      return this.actived ? `color:${this.activedColor}` : `color:${this.defaultColor}`
+      return this.actived ? {color:this.activedColor} : {color:this.defaultColor}
     },
     img_actived () {
       return this.actived ? `${this.activeUrl}` : `${this.normalUrl}`

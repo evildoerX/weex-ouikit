@@ -2,8 +2,8 @@
   <div>
     <div class="buttongroup">
       <OButton class="button-item" type="primary" size="large" @click="showMask" >显示Mask</OButton>
-      <u-mask :show="$store.getters.maskVisiable" @click="onMaskClick">
-    </u-mask>
+      <OMask :show="$store.getters.maskVisiable" @click="onMaskClick">
+    </OMask>
     </div>
   </div>
 

@@ -30,7 +30,7 @@ import VRange from './components/Range'
 
 import VTimeline from './components/Timeline'
 import VTimelineItem from './components/TimelineItem'
-import UMask from 'packages/common/Mask'
+import OMask from 'packages/mask/Mask'
 import USelectPopup from 'packages/common/SelectPopup'
 import UInput from 'packages/form/Input'
 import USelect from 'packages/form/Select'
@@ -62,12 +62,12 @@ Vue.component(OTabs.name, OTabs)
 Vue.component(OTab.name, OTab)
 Vue.component(OSwitch.name, OSwitch)
 Vue.component(ORater.name, ORater)
+Vue.component(OMask.name, OMask)
 
 Vue.component(VChecker.name, VChecker)
 Vue.component(VRange.name, VRange)
 Vue.component(VTimeline.name, VTimeline)
 Vue.component(VTimelineItem.name, VTimelineItem)
-Vue.component(UMask.name, UMask)
 Vue.component(USelectPopup.name, USelectPopup)
 
 Vue.component(UInput.name, UInput)

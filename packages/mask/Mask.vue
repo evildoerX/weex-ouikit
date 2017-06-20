@@ -6,7 +6,7 @@
 </template>
 <script>
 export default {
-  name: 'u-mask',
+  name: 'OMask',
   props: {
     show: {
       type: Boolean,

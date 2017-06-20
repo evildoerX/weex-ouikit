@@ -1,71 +1,69 @@
-$switch-small-height: 40;
-$switch-normal-height: 60;
-$switch-large-height: 80;
-$switch-small-border: 2px;
-$switch-normal-border: 4px;
-$switch-large-border: 6px;
 .switch {
   flex-direction: row;
   align-items: center;
   background-color: #fff;
+  border-color: #dfdfdf;
+  border-style: solid;
+  border-width: 2px;
 }
 // size
 .sz-small {
-  min-width: ($switch-small-height * 2)px;
-  height: ($switch-small-height)px;
-  border-radius: ($switch-small-height / 2)px;
+  min-width: 132px;
+  height: 68px;
+  border-radius: 34px;
 }
 .sz-normal {
-  min-width: ($switch-normal-height * 2)px;
-  height: ($switch-normal-height)px;
-  border-radius: ($switch-normal-height / 2)px;
+  min-width: 132px;
+  height: 68px;
+  border-radius: 34px;
 }
 .sz-large {
-  min-width: ($switch-large-height * 2)px;
-  height: ($switch-large-height)px;
-  border-radius: ($switch-large-height / 2)px;
+  min-width: 132px;
+  height: 68px;
+  border-radius: 34px;
 }
 .checked {
   background-color: #04be02;
 }
 .disabled {
-  background-color: #c9c9c9;
+  background-color: rgba(255,255,255,.6);
 }
 .icon {
   background-color: #fff;
   border-style: solid;
-  border-color: #04be02;
-  transform: translateX(100%);
+  border-color: #dfdfdf;
+  transform: translateX(0);
 }
+
 .icon-checked {
   border-color: #04be02;
 }
 .icon-disabled {
-  border-color: #c9c9c9;
+  border-color: rgba(255,255,255,.6);
 }
 // circle size
 .isz-small {
-  width: ($switch-small-height)px;
-  height: ($switch-small-height)px;
-  border-width: $switch-small-border;
-  border-radius: ($switch-small-height / 2)px;
+  width: 64px;
+  height: 64px;
+  border-width: 2px;
+  border-radius: 32px;
 }
 .isz-normal {
-  width: ($switch-normal-height)px;
-  height: ($switch-normal-height)px;
-  border-width: $switch-normal-border;
-  border-radius: ($switch-normal-height / 2)px;
+  width: 64px;
+  height: 64px;
+  border-width: 2px;
+  border-radius: 32px;
 }
 .isz-large {
-  width: ($switch-large-height)px;
-  height: ($switch-large-height)px;
-  border-width: $switch-large-border;
-  border-radius: ($switch-large-height / 2)px;
+  width: 64px;
+  height: 64px;
+  border-width: 2px;
+  border-radius: 32px;
 }
 .text {
-  color: #04be02;
-  margin-left: 40px;
+  color: #fff;
+  margin-left: 0px;
 }
 .text-disabled {
-  color: #c9c9c9;
+  color: rgba(255,255,255,.6);
 }

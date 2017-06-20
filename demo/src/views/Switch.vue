@@ -1,7 +1,7 @@
 <template>
   <div class="oradios">
     <div class="radio-block">
-      <OSwitch :value="checked5" @input="v=>checked5=v" size="normal"
+      <OSwitch :value="checked5" @input="v=>checked5=v"
         true-value="true" false-value="false"></OSwitch>
     </div>
   </div>

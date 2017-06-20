@@ -66,67 +66,6 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-@import "../theme-default/var.styl"
-$switch-small-height = 40
-$switch-normal-height = 60
-$switch-large-height = 80
-$switch-small-border = 2px
-$switch-normal-border = 4px
-$switch-large-border = 6px
-.switch
-  flex-direction row
-  align-items center
-  background-color #fff
-  border-color #dfdfdf
-  border-style solid
-  border-width 2px
-
-// size
-.sz-small
-  min-width ($switch-small-height * 2)px
-  height ($switch-small-height)px
-  border-radius ($switch-small-height / 2)px
-.sz-normal
-  min-width ($switch-normal-height * 2)px
-  height ($switch-normal-height)px
-  border-radius ($switch-normal-height / 2)px
-.sz-large
-  min-width ($switch-large-height * 2)px
-  height ($switch-large-height)px
-  border-radius ($switch-large-height / 2)px
-.checked
-  background-color #04be02
-.disabled
-  background-color $color-disabled
-.icon
-  background-color #fff
-  border-style solid
-  border-color #dfdfdf
-  transform translateX(0)
-.icon-checked
-  border-color #04be02
-.icon-disabled
-  border-color $color-disabled
-// circle size
-.isz-small
-  width ($switch-small-height)px
-  height @width
-  border-width $switch-small-border
-  border-radius ($switch-small-height / 2)px
-.isz-normal
-  width ($switch-normal-height)px
-  height @width
-  border-width $switch-normal-border
-  border-radius ($switch-normal-height / 2)px
-.isz-large
-  width ($switch-large-height)px
-  height @width
-  border-width 3px;
-  border-radius ($switch-large-height / 2)px
-.text
-  color #fff
-  margin-left 0px
-.text-disabled
-  color $color-text-disabled
+<style lang="sass" scoped>
+@import '../theme-default/widget/o-switch/switch.scss'
 </style>

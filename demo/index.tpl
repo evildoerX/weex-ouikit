@@ -18,9 +18,9 @@
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #ff3083;
+    background-color: #04be02;
     border-radius: 50%;
-    box-shadow: 1px 3px 13px 0px #ce4e81;
+    box-shadow: 0px 1px 10px 0px #04be02;
     z-index: 99999;
   }
 
@@ -49,7 +49,7 @@
     margin-bottom: 10px;
     width: 100%;
     text-align: center;
-    background-color: #489cff;
+    background-color: #04be02;
     border-radius: 4px 4px 0 0;
     color: #fff;
   }

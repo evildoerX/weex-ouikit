@@ -3,6 +3,7 @@
     <div class="header">
       <text class="header_text">O-UI</text>
     </div>
+    <OH3 class="title" >基础组件</OH3>
     <div class="grid-row">
       <div class="grid-cell" @click="jump('/color')">
         <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
@@ -69,61 +70,62 @@
         <CIcon size="46" color="#04be02" iconID="&#xe7f1;"></CIcon>
         <text class="text">评分</text></div>
     </div>
-    <!--<div class="grid-row">
+    <div class="grid-row">
       <div class="grid-cell" @click="jump('/input')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
         <text class="text">输入框(待优化)</text></div>
-      <div class="grid-cell" @click="jump('/input-number')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6e6"></CIcon>
-        <text class="text">数字选择</text></div>
       <div class="grid-cell" @click="jump('/select')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
         <text class="text">下拉(待优化)</text></div>
-    </div>-->
-    <!--<div class="grid-row">
-      <div class="grid-cell" @click="showLoading">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">加载动画(仅做参考)</text></div>
-      <div class="grid-cell" @click="jump('/tab')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">Tab页(待修复)</text></div>
-      <div class="grid-cell" @click="jump('/progress')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">进度条</text></div>
-    </div>-->
-    <!--<div class="grid-row">
-      <div class="grid-cell" @click="jump('/cell')">
-        <CIcon size="46" color="#04be02" iconID="&#xe60a"></CIcon>
-        <text class="text">列表</text></div>
-      <div class="grid-cell" @click="jump('/tabbar')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">Tabbar</text></div>
-      <div class="grid-cell" @click="jump('/checker')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">全选</text></div>
-    </div>-->
-    <!--<div class="grid-row">
-      <div class="grid-cell" @click="jump('/range')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">Range(原生有坑)</text></div>
-      <div class="grid-cell" @click="jump('/badge')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">Badge</text></div>
-      <div class="grid-cell" @click="jump('/rater')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">评分</text></div>
-    </div>-->
-    <!--<div class="grid-row">
       <div class="grid-cell" @click="jump('/timeline')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">时间轴</text></div>
-      <div class="grid-cell" @click="jump('/resource')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">远程请求(简单封装)</text></div>
-      <div class="grid-cell" @click="jump('/date-format')">
-        <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">简单的时间格式化</text></div>
-    </div>-->
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">轮播图</text></div>
+    </div>
+    <div class="grid-row">
+      <div class="grid-cell" @click="jump('/input')">
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">地址pick</text></div>
+      <div class="grid-cell" @click="jump('/select')">
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">时间Pick</text></div>
+      <div class="grid-cell" @click="jump('/timeline')">
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">PickData</text></div>
+    </div>
+    <div class="grid-row">
+      <div class="grid-cell" @click="jump('/input')">
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">ActionSheet</text></div>
+      <div class="grid-cell" @click="jump('/select')">
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">Modal</text></div>
+      <div class="grid-cell" @click="jump('/timeline')">
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">Toast</text></div>
+    </div>
+    <div class="grid-row">
+      <div class="grid-cell" @click="jump('/input')">
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">下拉刷新</text></div>
+      <div class="grid-cell" @click="jump('/select')">
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">上滑加载更多</text></div>
+      <div class="grid-cell" @click="jump('/timeline')">
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">SwipeAction</text></div>
+    </div>
+    <OH3 class="title" >业务组件</OH3>
+    <div class="grid-row">
+      <div class="grid-cell" @click="jump('/input')">
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">注册登录</text></div>
+      <div class="grid-cell" @click="jump('/select')">
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">用户信息</text></div>
+      <div class="grid-cell" @click="jump('/timeline')">
+        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
+        <text class="text">中餐馆组件库</text></div>
+    </div>
   </div>
 </template>
 <script>
@@ -167,5 +169,8 @@ export default {
 }
 .text {
   font-size: 28px;
+}
+.title {
+  padding: 20px;
 }
 </style>

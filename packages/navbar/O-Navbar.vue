@@ -51,7 +51,7 @@ export default {
   flex: 1;
 }
 .title {
-  flex: 4;
+  flex: 3;
   color: #fff;
   font-size: 36px;
   font-weight: 400;

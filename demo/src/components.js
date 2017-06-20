@@ -6,6 +6,7 @@ import OH5 from 'packages/text/H5'
 import OH6 from 'packages/text/H6'
 import OH7 from 'packages/text/H7'
 import OIcon from 'packages/icon/O-Icon'
+import CIcon from 'packages/icon/C-Icon'
 import OButton from 'packages/button/O-Button'
 import OChecklist from 'packages/checklist/O-Checklist'
 import ORadio from 'packages/radio/O-Radio'
@@ -50,6 +51,7 @@ Vue.component(OH5.name, OH5)
 Vue.component(OH6.name, OH6)
 Vue.component(OH7.name, OH7)
 Vue.component(OIcon.name, OIcon)
+Vue.component(CIcon.name, CIcon)
 Vue.component(OButton.name, OButton)
 Vue.component(OChecklist.name, OChecklist)
 Vue.component(ORadio.name, ORadio)

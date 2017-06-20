@@ -24,6 +24,7 @@ import Timeline from './views/Timeline'
 import Loading from './views/Loading'
 import InLineLoading from './views/InLineLoading'
 import LoadingMore from './views/LoadingMore'
+import Navbar from './views/Navbar'
 import store from './store'
 Vue.use(Router)
 
@@ -67,7 +68,8 @@ const router = new Router({
     { path: '/date-format', component: DateFormat },
     { path: '/loading', component: Loading },
     { path: '/inlineloading', component: InLineLoading },
-    { path: '/loadingmore', component: LoadingMore }
+    { path: '/loadingmore', component: LoadingMore },
+    { path: '/navbar', component: Navbar }
   ]
 })
 

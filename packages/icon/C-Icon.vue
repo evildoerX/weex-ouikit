@@ -5,7 +5,7 @@
 const domModule = weex.requireModule('dom')
 var he = require('he');
 export default {
-  name: 'OIcon',
+  name: 'CIcon',
   props: {
     size: {
       type: String,

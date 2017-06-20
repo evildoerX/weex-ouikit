@@ -51,7 +51,7 @@
       <div class="grid-cell" @click="jump('/tabbar')">
         <OIcon size="46" color="#04be02" iconID="&#xe754"></OIcon>
         <text class="text">Tabbar</text></div>
-      <div class="grid-cell" @click="jump('/tab')">
+      <div class="grid-cell" @click="jump('/navbar')">
         <OIcon size="46" color="#04be02" iconID="&#xe8ed"></OIcon>
         <text class="text">Navbar</text></div>
       <div class="grid-cell" @click="jump('/tab')">

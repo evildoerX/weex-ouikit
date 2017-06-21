@@ -1,9 +1,9 @@
 <template>
-  <div class="v-homepage grid">
+  <div class="homepage grid">
     <div class="header">
       <text class="header_text">O-UI</text>
     </div>
-    <OH3 class="title" >基础组件</OH3>
+    <OH3 class="title" style="margin-top:88px;" >基础组件</OH3>
     <div class="grid-row">
       <div class="grid-cell" @click="jump('/color')">
         <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
@@ -138,6 +138,10 @@ export default {
   flex-direction: row;
 }
 .header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;

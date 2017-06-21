@@ -37,10 +37,4 @@ export default {
 .app {
   background-color: #f9fafc;
 }
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 </style>

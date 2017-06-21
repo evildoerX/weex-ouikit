@@ -21,7 +21,7 @@
     </OInput>
     <OInput class="input-item" v-model="input16" placeholder="input something" ref="input2">
       <OIcon  slot="left_icon" @click="input16='';$refs.input16.focus()" size="40px" iconID="&#xe7d6;"></OIcon>
-      <OButton slot="right" type="primary" size="small" btnWidth="180" plant @click="input16='';$refs.input16.focus()"  >获取验证码</OButton>
+      <OButton slot="right" type="primary" size="small" diybutton_size btnWidth="180" plant @click="input16='';$refs.input16.focus()"  >获取验证码</OButton>
     </OInput>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <text class="o-btn" :class="classes" :style="{width:`${btnWidth}px`,color:btncolor}" @click="click" @longpress="longpress">
+    <text class="o-btn" :class="classes" :style="ditstyle" @click="click" @longpress="longpress">
       <slot></slot>
     </text>
 </template>
@@ -19,7 +19,9 @@
       //方角还是圆角，默认方角
       angle: Boolean,
       //幽灵还是非幽灵
-      plant:Boolean,
+      plant: Boolean,
+      diybutton_size: Boolean,
+      diybutton_color: Boolean,
       btnWidth: {
         default: ''
       },
@@ -38,6 +40,16 @@
            result.push(this.disabled ? `o-btn-plain_disabled` : ``)
         }else{
            result.push(this.disabled ? `o-btn-disabled_${this.type}` : ``)
+        }
+        return result
+      },
+      ditstyle () {
+        const result = []
+        if(this.diybutton_size) {
+          result.push({width:`${this.btnWidth}px`})
+        }
+        if(this.diybutton_color) {
+          result.push({color:this.btncolor})
         }
         return result
       }

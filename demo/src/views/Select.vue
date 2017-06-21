@@ -5,6 +5,9 @@
     <u-select :value="select2" @input="v=>select2=v" @expand="$store.dispatch('toggleSelect', true)"
       ref="select2" placeholder="请选择" class="select-item" :data="data2"></u-select>
     <u-select placeholder="请选择" disabled class="select-item" :data="data1"></u-select>
+    <OMask :show="$store.getters.maskVisiable" @click="onMaskClick">
+      <u-select-popup :mask-show="$store.getters.maskVisiable" @hide-mask="$store.dispatch('toggleMask', false)"></u-select-popup>
+    </OMask>
   </div>
 </template>
 <script>
@@ -27,6 +30,13 @@ export default {
       }, {
         label: '其它', value: 'other', disabled: true
       }]
+    }
+  },
+  methods: {
+    onMaskClick () {
+      if (!this.$store.getters.loadingVisiable) {
+        this.$store.dispatch('toggleMask', false)
+      }
     }
   }
 }

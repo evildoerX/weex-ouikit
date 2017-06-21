@@ -99,4 +99,10 @@ $option-height = 88px
   opacity 0
 .icon-active
   opacity 1
+.popup
+  width: 680px;
+  border-radius: 10px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 </style>

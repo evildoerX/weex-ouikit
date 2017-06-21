@@ -25,15 +25,14 @@ import OTab from 'packages/Tab/Tab'
 import ORater from 'packages/rater/Rater'
 import OSwitch from 'packages/switch/Switch'
 import OInput from 'packages/input/Input'
+import OMask from 'packages/mask/Mask'
+import OSelectPopup from 'packages/select/SelectPopup'
+import OSelect from 'packages/select/Select'
 
 import VChecker from './components/Checker'
 import VRange from './components/Range'
-
 import VTimeline from './components/Timeline'
 import VTimelineItem from './components/TimelineItem'
-import OMask from 'packages/mask/Mask'
-import USelectPopup from 'packages/common/SelectPopup'
-import USelect from 'packages/form/Select'
 import UProgress from 'packages/data/Progress'
 
 Vue.component(OH1.name, OH1)
@@ -64,13 +63,11 @@ Vue.component(OSwitch.name, OSwitch)
 Vue.component(ORater.name, ORater)
 Vue.component(OMask.name, OMask)
 Vue.component(OInput.name, OInput)
+Vue.component(OSelectPopup.name, OSelectPopup)
+Vue.component(OSelect.name, OSelect)
 
 Vue.component(VChecker.name, VChecker)
 Vue.component(VRange.name, VRange)
 Vue.component(VTimeline.name, VTimeline)
 Vue.component(VTimelineItem.name, VTimelineItem)
-Vue.component(USelectPopup.name, USelectPopup)
-
-Vue.component(USelect.name, USelect)
-
 Vue.component(UProgress.name, UProgress)

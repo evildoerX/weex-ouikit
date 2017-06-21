@@ -74,9 +74,9 @@
       <div class="grid-cell" @click="jump('/input')">
         <CIcon size="46" color="#04be02" iconID="&#xe600;"></CIcon>
         <text class="text">输入框</text></div>
-      <div class="grid-cell" @click="jump('/select')">
-        <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
-        <text class="text">下拉</text></div>
+      <div class="grid-cell" @click="jump('/date-format')">
+        <CIcon size="46" color="#04be02" iconID="&#xe708;"></CIcon>
+        <text class="text">时间格式化</text></div>
       <div class="grid-cell" @click="jump('/timeline')">
         <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
         <text class="text">轮播图</text></div>

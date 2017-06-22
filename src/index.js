@@ -31,6 +31,12 @@ import OSelect from './select/Select'
 import OPanel from './panel/O-Panel'
 import OPanelGroup from './panel/O-PanelGroup'
 
+import VChecker from '../demo/src/components/Checker'
+import VRange from '../demo/src/components/Range'
+import VTimeline from '../demo/src/components/Timeline'
+import VTimelineItem from '../demo/src/components/TimelineItem'
+import UProgress from './data/Progress'
+
 export {
 	OH1,
 	OH2,
@@ -63,3 +69,42 @@ export {
 	OPanel,
 	OPanelGroup
 }
+
+Vue.component(OH1.name, OH1)
+Vue.component(OH2.name, OH2)
+Vue.component(OH4.name, OH4)
+Vue.component(OH3.name, OH3)
+Vue.component(OH5.name, OH5)
+Vue.component(OH6.name, OH6)
+Vue.component(OH7.name, OH7)
+Vue.component(OIcon.name, OIcon)
+Vue.component(CIcon.name, CIcon)
+Vue.component(OButton.name, OButton)
+Vue.component(OChecklist.name, OChecklist)
+Vue.component(ORadio.name, ORadio)
+Vue.component(OCell.name, OCell)
+Vue.component(OCellGroup.name, OCellGroup)
+Vue.component(OInputNumber.name, OInputNumber)
+Vue.component(OBadge.name, OBadge)
+Vue.component(OLoading.name, OLoading)
+Vue.component(OInLineLoading.name, OInLineLoading)
+Vue.component(OLoadingMore.name, OLoadingMore)
+Vue.component(OTabbar.name, OTabbar)
+Vue.component(OTabbarItem.name, OTabbarItem)
+Vue.component(ONavbar.name, ONavbar)
+Vue.component(OTabs.name, OTabs)
+Vue.component(OTab.name, OTab)
+Vue.component(OSwitch.name, OSwitch)
+Vue.component(ORater.name, ORater)
+Vue.component(OMask.name, OMask)
+Vue.component(OInput.name, OInput)
+Vue.component(OSelectPopup.name, OSelectPopup)
+Vue.component(OSelect.name, OSelect)
+Vue.component(OPanel.name, OPanel)
+Vue.component(OPanelGroup.name, OPanelGroup)
+
+Vue.component(VChecker.name, VChecker)
+Vue.component(VRange.name, VRange)
+Vue.component(VTimeline.name, VTimeline)
+Vue.component(VTimelineItem.name, VTimelineItem)
+Vue.component(UProgress.name, UProgress)

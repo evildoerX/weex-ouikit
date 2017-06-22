@@ -17,7 +17,7 @@
   </div>
 </template>
 <style lang="stylus" scoped>
-@import "../../../packages/theme-default/var.styl"
+@import "../../../src/theme-default/var.styl"
 .OIconfonts
   padding 20px
 .icon-row

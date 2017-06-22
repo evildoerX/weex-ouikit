@@ -11,7 +11,7 @@
 </template>
 <script>
 const dom = weex.requireModule('dom')
-import { Draggable } from '../../../packages/mixins/draggable'
+import { Draggable } from '../../../src/mixins/draggable'
 export default {
   name: 'v-range',
   props: {
@@ -101,7 +101,7 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-@import "../../../packages/theme-default/var.styl"
+@import "../../../src/theme-default/var.styl"
 $axis-height = 4
 $range-height = 88
 $circle-radius = 48

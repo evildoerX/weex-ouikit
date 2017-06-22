@@ -7,7 +7,7 @@
   </div>
 </template>
 <script>
-import { format } from '../../../packages/utils'
+import { format } from '../../../src/utils'
 export default {
   data () {
     return {

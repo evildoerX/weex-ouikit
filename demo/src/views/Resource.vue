@@ -10,7 +10,7 @@
   </list>
 </template>
 <script>
-import { createInstance } from '../../../packages/utils'
+import { createInstance } from '../../../src/utils'
 const modal = weex.requireModule('modal')
 export default {
   data () {

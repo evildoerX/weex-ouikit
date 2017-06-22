@@ -28,8 +28,6 @@ import OInput from 'packages/input/Input'
 import OMask from 'packages/mask/Mask'
 import OSelectPopup from 'packages/select/SelectPopup'
 import OSelect from 'packages/select/Select'
-import OWTabbar from 'packages/Tabbar/OW-Tabbar'
-import OWTabbarItem from 'packages/Tabbar/OW-TabbarItem'
 import OPanel from 'packages/panel/O-Panel'
 import OPanelGroup from 'packages/panel/O-PanelGroup'
 
@@ -69,8 +67,6 @@ Vue.component(OMask.name, OMask)
 Vue.component(OInput.name, OInput)
 Vue.component(OSelectPopup.name, OSelectPopup)
 Vue.component(OSelect.name, OSelect)
-Vue.component(OWTabbar.name, OWTabbar)
-Vue.component(OWTabbarItem.name, OWTabbarItem)
 Vue.component(OPanel.name, OPanel)
 Vue.component(OPanelGroup.name, OPanelGroup)
 

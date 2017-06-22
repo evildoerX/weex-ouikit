@@ -49,9 +49,9 @@
         <text class="text">LoadingMore</text></div>
     </div>
     <div class="grid-row">
-      <div class="grid-cell" @click="jump('/wxtabbar')">
+      <div class="grid-cell" @click="jump('/panel')">
         <CIcon size="46" color="#04be02" iconID="&#xe754"></CIcon>
-        <text class="text">WeexTabbar</text></div>
+        <text class="text">Panel</text></div>
       <div class="grid-cell" @click="jump('/tabbar')">
         <CIcon size="46" color="#04be02" iconID="&#xe754"></CIcon>
         <text class="text">Tabbar</text></div>

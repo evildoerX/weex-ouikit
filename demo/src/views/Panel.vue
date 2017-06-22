@@ -8,56 +8,6 @@
         value="保护中..."
         @Click="Click">
       </OCell>
-      <OCell
-        dataRole="none"
-        :height="navBarHeight"
-        Title="余额"
-        value="-1024"
-        showArrow
-        @Click="Click">
-      </OCell>
-      <OCell
-        dataRole="none"
-        :height="navBarHeight"
-        Title="提现"
-        TitleColor="#b2b2b2"
-        showArrow
-        Disabled
-        @Click="Click">
-      </OCell>
-      <OCell
-        dataRole="none"
-        :height="navBarHeight"
-        Title="重要消息"
-        TitleColor="green"
-        Tip="1"
-        showArrow
-        @Click="Click">
-      </OCell>
-      <OCell
-        dataRole="none"
-        :height="navBarHeight"
-        Title="接收通知"
-        @Click="Click">
-      </OCell>
-      <OCell
-        dataRole="none"
-        :height="navBarHeight"
-        Src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII="
-        Title="通用"
-        showArrow
-        @Click="Click">
-      </OCell>
-      <OCell
-        dataRole="none"
-        :height="navBarHeight"
-        Src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII="
-        Title="通用"
-        value="有一个可用红包"
-        valueColor="red"
-        showArrow
-        @Click="Click">
-      </OCell>
     </OCellGroup>
   </div>
 </template>

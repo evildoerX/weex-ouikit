@@ -1,14 +1,39 @@
 <template>
   <div class="v-cells">
-     <OCellGroup title="个人信息">
-      <OCell
+     <OPanelGroup title="图文组合列表" footer="查看更多" showArrow>
+      <OPanel
         dataRole="none"
         :height="navBarHeight"
-        Title="我的账号"
-        value="保护中..."
+        Src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/pic/item/03087bf40ad162d9e2a45c7f1bdfa9ec8a13cd0e.jpg"
+        Title="我是美女讲师"
+        Disc=" 今天讲的课是xxx"
         @Click="Click">
-      </OCell>
-    </OCellGroup>
+      </OPanel>
+      <OPanel
+        dataRole="none"
+        :height="navBarHeight"
+        Src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/pic/item/03087bf40ad162d9e2a45c7f1bdfa9ec8a13cd0e.jpg"
+        Title="我是美女讲师"
+        Disc=" 今天讲的课是xxx"
+        @Click="Click">
+      </OPanel>
+      <OPanel
+        dataRole="none"
+        :height="navBarHeight"
+        Src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/pic/item/03087bf40ad162d9e2a45c7f1bdfa9ec8a13cd0e.jpg"
+        Title="我是美女讲师"
+        Disc=" 今天讲的课是xxx"
+        @Click="Click">
+      </OPanel>
+      <OPanel
+        dataRole="none"
+        :height="navBarHeight"
+        Src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/pic/item/03087bf40ad162d9e2a45c7f1bdfa9ec8a13cd0e.jpg"
+        Title="我是美女讲师"
+        Disc=" 今天讲的课是xxx"
+        @Click="Click">
+      </OPanel>
+    </OPanelGroup>
   </div>
 </template>
 <script>
@@ -19,7 +44,7 @@ export default {
   data () {
     return {
       gender: 'male',
-      navBarHeight: 87
+      navBarHeight: 180
     }
   },
   methods: {

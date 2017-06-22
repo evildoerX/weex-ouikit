@@ -19,7 +19,6 @@
           :class="lefttext">{{Title}}</OH3>
           <OH6
           v-if="Disc"
-          :style="{color:DiscColor}"
           :class="leftdisc">{{Disc}}</OH6>
       </div>
     </div>
@@ -74,7 +73,7 @@ export default {
         this.Disabled ? `Disabled` : ``
       ]
     },
-    left_disc () {
+    leftdisc () {
       return [
         this.showArrow ? `right-textA` : `right-text`,
         this.Disabled ? `Disabled` : ``

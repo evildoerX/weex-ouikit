@@ -53,5 +53,8 @@
     "weex-loader": "^0.4.4",
     "weex-vue-loader": "^0.2.11",
     "weex-vue-render": "^0.1.9"
+  },
+  "dependencies": {
+    "vue-i18n": "^7.0.3"
   }
 }

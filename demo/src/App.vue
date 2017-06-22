@@ -1,15 +1,16 @@
 <template>
   <div class="app">
+    <scroller class="content">
+      <router-view ></router-view>
+     </scroller>
     <ONavbar
       style="background-color:#35495e;"
+      class="header"
       :title="$store.getters.title"
       v-if="$route.path!=='/'">
       <OIcon slot="left" color="#fff" @click="$router.go(-1)" iconID="&#xe80c;"></OIcon>
       <OIcon slot="right" color="#fff" @click="copy" iconID="&#xe7d4;"></OIcon>
     </ONavbar>
-     <scroller>
-      <router-view ></router-view>
-     </scroller>
   </div>
 </template>
 <script>
@@ -36,5 +37,14 @@ export default {
 <style scoped>
 .app {
   background-color: #f9fafc;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.content {
+  margin-top:88px;
 }
 </style>

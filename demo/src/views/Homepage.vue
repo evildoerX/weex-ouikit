@@ -1,16 +1,16 @@
 <template>
   <div class="homepage grid">
-    <div class="header">
+    <!--<div class="header">
       <text class="header_text">O-UI</text>
-    </div>
-    <OH3 class="title" style="margin-top:88px;" >基础组件</OH3>
+    </div>-->
+    <OH3 class="title" >基础组件</OH3>
     <div class="grid-row">
       <div class="grid-cell" @click="jump('/color')">
         <CIcon size="46" color="#04be02" iconID="&#xe6d0"></CIcon>
-        <text class="text">颜色</text></div>
+        <text class="text">{{$t('color')}}</text></div>
       <div class="grid-cell" @click="jump('/text')">
         <CIcon size="46" color="#04be02" iconID="&#xe692"></CIcon>
-        <text class="text">文本</text></div>
+        <text class="text">{{$t('text')}}</text></div>
       <div class="grid-cell" @click="jump('/iconfont')">
         <CIcon size="46" color="#04be02" iconID="&#xe74e"></CIcon>
         <text class="text">iconfont</text></div>
@@ -77,7 +77,7 @@
       <div class="grid-cell" @click="jump('/date-format')">
         <CIcon size="46" color="#04be02" iconID="&#xe708;"></CIcon>
         <text class="text">时间格式化</text></div>
-      <div class="grid-cell" @click="jump('/timeline')">
+      <div class="grid-cell" @click="jump('/swiper')">
         <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
         <text class="text">轮播图</text></div>
     </div>
@@ -130,7 +130,20 @@
 </template>
 <script>
 export default {
-
+  i18n: {
+    messages: {
+        // 英文
+      en: {
+        color: 'Color',
+        text: 'Text'
+      },
+      // 中文
+      zh: {
+        color: '颜色',
+        text: '文本'
+      }
+    }
+  }
 }
 </script>
 <style lang="sass" scoped>

@@ -1,10 +1,10 @@
 <template>
   <div
-    class="container"
+    class="panel-container"
     :style="{ height: `${height}px`}"
     @click="click"
     @longpress="longpress">
-    <div class="content">
+    <div class="panel-content">
       <div class="img-content">
         <image
           v-if="Src"

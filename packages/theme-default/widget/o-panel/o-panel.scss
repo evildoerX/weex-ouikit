@@ -1,13 +1,13 @@
-.container {
+.panel-container {
     flex-direction: row;
     padding-left: 30px;
     width: 750px;
     margin-top: -1px;
   }
-  .container:active {
+  .panel-container:active {
     background-color: #ECECEC;
   }
-  .content {
+  .panel-content {
     position: relative;
     flex-direction: row;
     border-bottom-style: solid;

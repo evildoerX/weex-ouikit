@@ -1,7 +1,6 @@
 <template>
   <div
     class="container"
-    :class="cellstyle"
     :style="{ height: `${height}px`}"
     @click="click"
     @longpress="longpress">
@@ -10,16 +9,15 @@
         <image
           v-if="Src"
           :src="Src"
-          class="left-image"></image>
+          class="l-image"></image>
       </div>
       <div class="text-content">
         <OH3
           v-if="Title"
           :style="{color:TitleColor}"
-          :class="lefttext">{{Title}}</OH3>
+          class="lefttext">{{Title}}</OH3>
           <OH6
-          v-if="Disc"
-          :class="leftdisc">{{Disc}}</OH6>
+          v-if="Disc" {{Disc}}</OH6>
       </div>
     </div>
   </div>
@@ -42,7 +40,7 @@ export default {
     //导航条背景色
     backgroundColor: { default: 'white' },
     //导航条高度
-    height: { default: 87 },
+    height: { default: 180 },
     //左侧按钮图片
     Src: { default: '' },
     //左侧按钮标题
@@ -76,11 +74,6 @@ export default {
     leftdisc () {
       return [
         this.showArrow ? `right-textA` : `right-text`,
-        this.Disabled ? `Disabled` : ``
-      ]
-    },
-    cellstyle () {
-      return [
         this.Disabled ? `Disabled` : ``
       ]
     }

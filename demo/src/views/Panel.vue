@@ -6,7 +6,7 @@
         :height="navBarHeight"
         Src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/pic/item/03087bf40ad162d9e2a45c7f1bdfa9ec8a13cd0e.jpg"
         Title="我是美女讲师"
-        Disc=" 今天讲的课是xxx"
+        Disc="今天讲的课是xxx"
         @Click="Click">
       </OPanel>
       <OPanel
@@ -14,7 +14,7 @@
         :height="navBarHeight"
         Src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/pic/item/03087bf40ad162d9e2a45c7f1bdfa9ec8a13cd0e.jpg"
         Title="我是美女讲师"
-        Disc=" 今天讲的课是xxx"
+        Disc="今天讲的课是xxx"
         @Click="Click">
       </OPanel>
       <OPanel
@@ -22,7 +22,7 @@
         :height="navBarHeight"
         Src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/pic/item/03087bf40ad162d9e2a45c7f1bdfa9ec8a13cd0e.jpg"
         Title="我是美女讲师"
-        Disc=" 今天讲的课是xxx"
+        Disc="今天讲的课是xxx"
         @Click="Click">
       </OPanel>
       <OPanel
@@ -30,7 +30,7 @@
         :height="navBarHeight"
         Src="https://ss1.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/pic/item/03087bf40ad162d9e2a45c7f1bdfa9ec8a13cd0e.jpg"
         Title="我是美女讲师"
-        Disc=" 今天讲的课是xxx"
+        Disc="今天讲的课是xxx"
         @Click="Click">
       </OPanel>
     </OPanelGroup>

@@ -31,12 +31,6 @@ import OSelect from './select/Select'
 import OPanel from './panel/O-Panel'
 import OPanelGroup from './panel/O-PanelGroup'
 
-import VChecker from '../demo/src/components/Checker'
-import VRange from '../demo/src/components/Range'
-import VTimeline from '../demo/src/components/Timeline'
-import VTimelineItem from '../demo/src/components/TimelineItem'
-import UProgress from './data/Progress'
-
 export {
 	OH1,
 	OH2,
@@ -102,9 +96,3 @@ Vue.component(OSelectPopup.name, OSelectPopup)
 Vue.component(OSelect.name, OSelect)
 Vue.component(OPanel.name, OPanel)
 Vue.component(OPanelGroup.name, OPanelGroup)
-
-Vue.component(VChecker.name, VChecker)
-Vue.component(VRange.name, VRange)
-Vue.component(VTimeline.name, VTimeline)
-Vue.component(VTimelineItem.name, VTimelineItem)
-Vue.component(UProgress.name, UProgress)

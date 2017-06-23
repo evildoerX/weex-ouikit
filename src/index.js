@@ -54,6 +54,7 @@ export {
 	OTabbarItem,
 	ONavbar,
 	OTab,
+  OTabs,
 	ORater,
 	OSwitch,
 	OInput,

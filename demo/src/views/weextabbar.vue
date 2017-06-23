@@ -5,11 +5,10 @@
 </template>
 
 <script>
-  import route from 'router/page'
-  import navigator from 'utils/modules/navigator'
-
   export default {
-    data() {
+    components: {
+    },
+    data () {
       return {
         tabItems: [
           {
@@ -19,7 +18,7 @@
             icon: '',
             image: 'http://gtms01.alicdn.com/tps/i1/TB1qw.hMpXXXXagXXXX9t7RGVXX-46-46.png',
             selectedImage: 'http://gtms04.alicdn.com/tps/i4/TB16jjPMpXXXXazXVXX9t7RGVXX-46-46.png',
-            src: `${navigator.getBaseUrl()}${route.home.jsPath}.js`,
+            src: '11',
             visibility: 'visible'
           },
           {
@@ -29,7 +28,7 @@
             icon: '',
             image: 'http://gtms03.alicdn.com/tps/i3/TB1LEn9MpXXXXaUXpXX9t7RGVXX-46-46.png',
             selectedImage: 'http://gtms02.alicdn.com/tps/i2/TB1qysbMpXXXXcnXXXX9t7RGVXX-46-46.png',
-            src: `${navigator.getBaseUrl()}${route.launch.jsPath}.js`,
+            src: '11',
             visibility: 'hidden'
           },
           {
@@ -39,7 +38,7 @@
             icon: '',
             image: 'http://gtms03.alicdn.com/tps/i3/TB1LEn9MpXXXXaUXpXX9t7RGVXX-46-46.png',
             selectedImage: 'http://gtms02.alicdn.com/tps/i2/TB1qysbMpXXXXcnXXXX9t7RGVXX-46-46.png',
-            src: `${navigator.getBaseUrl()}${route.mine.jsPath}.js`,
+            src: '11',
             visibility: 'hidden'
           }
         ]

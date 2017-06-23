@@ -30,6 +30,7 @@ import Mask from './views/Mask'
 import Goods from './views/Goods'
 import Swiper from './views/Swiper'
 import Panel from './views/Panel.vue'
+import weextabbar from './views/weextabbar.vue'
 import store from './store'
 Vue.use(Router)
 
@@ -79,7 +80,8 @@ const router = new Router({
     { path: '/mask', component: Mask },
     { path: '/goods', component: Goods },
     { path: '/swiper', component: Swiper },
-    { path: '/panel', component: Panel }
+    { path: '/panel', component: Panel },
+    { path: '/weextabbar', component: weextabbar }
   ]
 })
 

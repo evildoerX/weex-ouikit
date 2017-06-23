@@ -54,6 +54,7 @@
 
 <script>
   export default {
+    name: 'OWTabbar',
     props: {
       tabItems: {default: []},
       selectedColor: {default: '#ff0000'},
@@ -65,7 +66,7 @@
       }
     },
     components: {
-      tabitem: require('./osc-tabitem.vue')
+      tabitem: require('./OW-TabbarItem')
     },
     created () {
       this.select(this.selectedIndex)

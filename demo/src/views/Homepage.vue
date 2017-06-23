@@ -52,6 +52,11 @@
       <div class="grid-cell" @click="jump('/panel')">
         <CIcon size="46" color="#04be02" iconID="&#xe754"></CIcon>
         <text class="text">Panel</text></div>
+    </div>
+    <div class="grid-row">
+      <div class="grid-cell" @click="jump('/wexxtabbar')">
+        <CIcon size="46" color="#04be02" iconID="&#xe754"></CIcon>
+        <text class="text">WexxTabbar</text></div>
       <div class="grid-cell" @click="jump('/tabbar')">
         <CIcon size="46" color="#04be02" iconID="&#xe754"></CIcon>
         <text class="text">Tabbar</text></div>
@@ -79,7 +84,7 @@
         <text class="text">输入框</text></div>
       <div class="grid-cell" @click="jump('/swiper')">
         <CIcon size="46" color="red" iconID="&#xe810;"></CIcon>
-        <text class="text">轮播图</text></div>  
+        <text class="text">轮播图</text></div>
     </div>
     <div class="grid-row">
       <div class="grid-cell" @click="jump('/input')">

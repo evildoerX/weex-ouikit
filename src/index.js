@@ -19,6 +19,8 @@ import OInLineLoading from './loading/O-InLineLoading'
 import OLoadingMore from './loading/O-LoadingMore'
 import OTabbar from './Tabbar/O-Tabbar'
 import OTabbarItem from './Tabbar/O-TabbarItem'
+import OWTabbar from './Tabbar/OW-Tabbar'
+import OWTabbarItem from './Tabbar/OW-TabbarItem.vue'
 import ONavbar from './navbar/O-Navbar'
 import OTabs from './Tab/Tabs'
 import OTab from './Tab/Tab'
@@ -52,6 +54,8 @@ export {
 	OInLineLoading,
 	OTabbar,
 	OTabbarItem,
+  OWTabbar,
+	OWTabbarItem,
 	ONavbar,
 	OTab,
   OTabs,
@@ -86,6 +90,8 @@ Vue.component(OInLineLoading.name, OInLineLoading)
 Vue.component(OLoadingMore.name, OLoadingMore)
 Vue.component(OTabbar.name, OTabbar)
 Vue.component(OTabbarItem.name, OTabbarItem)
+Vue.component(OWTabbar.name, OWTabbar)
+Vue.component(OWTabbarItem.name, OWTabbarItem)
 Vue.component(ONavbar.name, ONavbar)
 Vue.component(OTabs.name, OTabs)
 Vue.component(OTab.name, OTab)

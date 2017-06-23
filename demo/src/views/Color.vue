@@ -54,6 +54,8 @@ $OBgColorDefault: #f4f4f4;
 $OBgColorActive: rgba(0, 0, 0, 0.4);;
 .v-colors {
   padding: 20px;
+  justify-content:center;
+  align-items: center;
 }
 .text-block {
   margin-top: 20px;
@@ -64,6 +66,7 @@ $OBgColorActive: rgba(0, 0, 0, 0.4);;
   border-width: 1px;
   border-color: #ccbcbc;
   text-align: center;
+  width: 250px;
 }
 .t-Primary {
   color: #fff;

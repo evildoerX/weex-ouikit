@@ -1,7 +1,9 @@
 <template>
   <div class="app">
     <scroller class="content">
-      <router-view ></router-view>
+      <transition  name="fade" mode="out-in">
+        <router-view ></router-view>
+      </transition>
      </scroller>
     <ONavbar
       style="background-color:#35495e;"
@@ -35,6 +37,12 @@ export default {
 }
 </script>
 <style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
 .app {
   background-color: #f9fafc;
 }

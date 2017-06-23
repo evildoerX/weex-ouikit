@@ -5,19 +5,23 @@
     @click="click"
     @longpress="longpress">
     <div class="panel-content">
-      <div class="img-content">
-        <image
-          v-if="Src"
-          :src="Src"
-          class="l-image"></image>
-      </div>
+      <image
+        v-if="Src"
+        :src="Src"
+        class="l-image"></image>
       <div class="text-content">
-        <OH3
+        <text
           v-if="Title"
           :style="{color:TitleColor}"
-          class="lefttext">{{Title}}</OH3>
-          <OH6
-          v-if="Disc" {{Disc}}</OH6>
+          class="titletext">{{Title}}</text>
+        <text
+          v-if="Disc"
+          :class="disctext"> {{Disc}}</text>
+        <div class="textfooter"
+          v-if="!Src && footer">
+          <text class="textfrom">{{textfrom}}</text>
+          <text class="textother">{{otherinfo}}</text>
+        </div>
       </div>
     </div>
   </div>
@@ -40,7 +44,7 @@ export default {
     //导航条背景色
     backgroundColor: { default: 'white' },
     //导航条高度
-    height: { default: 180 },
+    height: { default: '' },
     //左侧按钮图片
     Src: { default: '' },
     //左侧按钮标题
@@ -54,7 +58,14 @@ export default {
     //右侧值颜色
     valueColor: { default: '#999999' },
     showArrow: Boolean,
-    Disabled: Boolean
+    Disabled: Boolean,
+    footer: Boolean,
+    textfrom: {
+      default: ''
+    },
+    otherinfo: {
+      default: ''
+    }
   },
   methods: {
     click (e) {
@@ -71,10 +82,9 @@ export default {
         this.Disabled ? `Disabled` : ``
       ]
     },
-    leftdisc () {
+    disctext () {
       return [
-        this.showArrow ? `right-textA` : `right-text`,
-        this.Disabled ? `Disabled` : ``
+        this.Src ? `disc-text` : `disc-textA`
       ]
     }
   }

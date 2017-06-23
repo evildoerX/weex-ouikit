@@ -61,48 +61,6 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-@import "../theme-default/var.styl"
-$option-height = 88px
-.option
-  flex-direction row
-  align-items center
-  justify-content space-between
-  height $option-height
-  padding-left 20px
-  padding-right 20px
-  background-color #fff
-  border-bottom-style solid
-  border-bottom-width 1px
-  border-bottom-color $color-text-disabled
-.option:active
-  background-color $color-select-active
-.disabled:active
-  background-color #fff
-.text
-  color $color-text-primary
-.text-active
-  color $color-primary
-.text-disabled
-  color $color-text-disabled
-.icon
-  width 24px
-  height 12px
-  border-left-style solid
-  border-left-width 3px
-  border-left-color $color-primary
-  border-bottom-style solid
-  border-bottom-width 3px
-  border-bottom-color $color-primary
-  border-radius 2px
-  transform rotate(-45deg)
-  opacity 0
-.icon-active
-  opacity 1
-.popup
-  width: 680px;
-  border-radius: 10px;
-  background-color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+<style lang="sass" scoped>
+@import '../theme-default/widget/o-select/o-selectpopup'
 </style>

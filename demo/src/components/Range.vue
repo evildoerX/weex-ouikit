@@ -100,51 +100,56 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-@import "../../../src/theme-default/var.styl"
-$axis-height = 4
-$range-height = 88
-$circle-radius = 48
-.range
-  position relative
-  flex-direction row
-  align-items center
-  flex 1
-  height ($range-height)px
-.min
-  width 80px
-  color $color-text-minor
-.max
-  width 80px
-  color $color-text-minor
-  text-align right
-.axis
-  flex 1
-  height ($axis-height)px
-  background-color $color-text-minor
-.axis-disabled
-  background-color lighten($color-text-minor, 20%)
-.completed
-  position absolute
-  left 80px
-  top (($range-height - $axis-height) / 2)px
-  height ($axis-height)px
-  background-color $color-primary
-.completed-disabled
-  background-color lighten($color-primary, 50%)
-.circle
-  position absolute
-  left (80 - $circle-radius / 2)px
-  top (($range-height - $circle-radius) / 2)px
-  width ($circle-radius)px
-  height @width
-  line-height @height
-  text-align center
-  font-size 16px
-  color #fff
-  background-color $color-primary
-  border-radius ($circle-radius / 2)px
-  box-shadow 1px 1px 15px $color-primary
-.circle-disabled
-  background-color lighten($color-primary, 50%)
+<style lang="sass" scoped>
+.range {
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  height: 88px;
+}
+.min {
+  width: 80px;
+  color: #667180;
+}
+.max {
+  width: 80px;
+  color: #667180;
+  text-align: right;
+}
+.axis {
+  flex: 1;
+  height: 4px;
+  background-color: #667180;
+}
+.axis-disabled {
+  background-color: lighten(#667180, 20%);
+}
+.completed {
+  position: absolute;
+  left: 80px;
+  top: 42px;
+  height: 4px;
+  background-color: #489cff;
+}
+.completed-disabled {
+  background-color: lighten(#489cff, 50%);
+}
+.circle {
+  position: absolute;
+  left: 42px;
+  top: 42px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: #489cff;
+  border-radius: (48 / 2)px;
+  box-shadow: 1px 1px 15px #489cff;
+}
+.circle-disabled {
+  background-color: lighten(#489cff, 50%);
+}
 </style>

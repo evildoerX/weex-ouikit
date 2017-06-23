@@ -30,36 +30,40 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-@import "../../../src/theme-default/var.styl"
-.checker
-  position relative
-  align-items center
-  flex-direction row
-.box
-  width 40px
-  height 40px
-  border-style solid
-  border-width 2px
-  border-color $color-text-primary
-  border-radius 20px
-.box-checked
-  border-color $color-primary
-.icon
-  position absolute
-  left 8px
-  top 14px
-  width 24px
-  height 12px
-  border-left-style solid
-  border-left-width 3px
-  border-left-color $color-primary
-  border-bottom-style solid
-  border-bottom-width 3px
-  border-bottom-color $color-primary
-  border-radius 2px
-  transform rotate(-45deg)
-.text
-  margin-left 40px
-  color $color-text-primary
+<style lang="sass" scoped>
+.checker {
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+}
+.box {
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #667180;
+  border-radius: 20px;
+}
+.box-checked {
+  border-color: #489cff;
+}
+.icon {
+  position: absolute;
+  left: 8px;
+  top: 14px;
+  width: 24px;
+  height: 12px;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #489cff;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #489cff;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+}
+.text {
+  margin-left: 40px;
+  color: #667180;
+}
 </style>

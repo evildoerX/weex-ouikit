@@ -60,44 +60,6 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-@import "../theme-default/var.styl"
-$select-height = 88px
-.select
-  position relative
-.item
-  flex-direction row
-  align-items center
-  padding-left 20px
-  padding-right 20px
-  height $select-height
-  font-size 34px
-  border-radius 4px
-  border-color $color-disabled
-  border-width 1px
-  border-style solid
-.disabled
-  background-color $color-text-disabled
-  border-color lighten($color-disabled, 30%)
-.text
-  flex 1
-  font-size 34px
-  font-weight 300
-  color $color-text-primary
-.placeholder
-  color lighten($color-text-primary, 30%)
-.text-disabled
-  color $color-disabled
-.icon
-  width 20px
-  height @width
-  margin-top -12px
-  margin-right 6px
-  border-left-style solid
-  border-left-width 3px
-  border-left-color $color-text-minor
-  border-bottom-style solid
-  border-bottom-width 3px
-  border-bottom-color $color-text-minor
-  transform rotate(-45deg)
+<style lang="sass" scoped>
+@import '../theme-default/widget/o-select/o-select'
 </style>

@@ -55,28 +55,6 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-@import "../theme-default/var.styl"
-.progress
-  position relative
-  flex-direction row
-  align-items center
-  height 32px
-.line
-  flex 1
-  height 4px
-  background-color $color-text-disabled
-  border-radius 2px
-.completed
-  position absolute
-  left 0
-  top 14px
-  height 4px
-  background-color $color-primary
-  border-radius 2px
-.text
-  width 80px
-  text-align right
-  color $color-text-highlight
-  font-size 24px
+<style lang="sass" scoped>
+@import "../theme-default/widget/o-progress/o-progress"
 </style>

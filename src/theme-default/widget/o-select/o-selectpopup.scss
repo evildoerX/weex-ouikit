@@ -1,0 +1,50 @@
+.option {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 88px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e6ecf2;
+}
+.option:active {
+  background-color: #f2f3f5;
+}
+.disabled:active {
+  background-color: #fff;
+}
+.text {
+  color: #667180;
+}
+.text-active {
+  color: #489cff;
+}
+.text-disabled {
+  color: #e6ecf2;
+}
+.icon {
+  width: 24px;
+  height: 12px;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #489cff;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #489cff;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+.icon-active {
+  opacity: 1;
+}
+.popup {
+  width: 680px;
+  border-radius: 10px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}

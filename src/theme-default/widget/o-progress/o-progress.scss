@@ -1,0 +1,26 @@
+.progress {
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  height: 32px;
+}
+.line {
+  flex: 1;
+  height: 4px;
+  background-color: #e6ecf2;
+  border-radius: 2px;
+}
+.completed {
+  position: absolute;
+  left: 0;
+  top: 14px;
+  height: 4px;
+  background-color: #489cff;
+  border-radius: 2px;
+}
+.text {
+  width: 80px;
+  text-align: right;
+  color: #233040;
+  font-size: 24px;
+}

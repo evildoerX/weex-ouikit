@@ -18,6 +18,6 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
+<style lang="sass" scoped>
 
 </style>

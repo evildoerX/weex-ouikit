@@ -15,6 +15,7 @@
 <script>
   import CIcon  from '../icon/C-Icon.vue'
   export default {
+    name: 'OWTabbarItem',
     props: {
       index: {
         default: 0

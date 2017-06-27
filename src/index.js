@@ -52,6 +52,7 @@ export {
 	OBadge,
 	OLoading,
 	OInLineLoading,
+	OLoadingMore,
 	OTabbar,
 	OTabbarItem,
   	OWTabbar,

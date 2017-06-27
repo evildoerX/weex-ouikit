@@ -13,14 +13,69 @@
           v-for="(item, index) in tabItems"
           :key="index"
           :index="item.index"
-          :icon="item.icon"
-          :title="item.title"
+          :iconimage="item.image"
+          :label="item.label"
           :titleColor="item.titleColor"
+          :iconcolor="item.titleColor"
+          :tabicon="item.icon"
           @tabItemOnClick="tabItemOnClick">
       </tabItem>
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+    props: {
+      tabItems: {
+        default: []
+      },
+      selectedColor: {
+        default: '#09BB07'
+      },
+      unselectedColor: {
+        default: '#999999'
+      },
+      imageType: {
+        type: String,
+        // 支持iconfont image, svg模式不好处理子节点的颜色，此时可以用slot处理
+        default: 'iconimage'
+      },
+    },
+    data () {
+      return {
+        selectedIndex: 0
+      }
+    },
+    components: {
+      tabitem: require('./osc-tabitem.vue')
+    },
+    created () {
+      this.select(this.selectedIndex)
+    },
+    methods: {
+      tabItemOnClick (e) {
+        this.selectedIndex = e.index
+        this.select(e.index)
+        this.$emit('tabBarOnClick', e)
+      },
+      select (index) {
+        for (let i = 0; i < this.tabItems.length; i++) {
+          let tabItem = this.tabItems[i]
+          if (i == index) {
+            tabItem.image = tabItem.selectedImage
+            tabItem.titleColor = this.selectedColor
+            tabItem.visibility = 'visible'
+          } else {
+            tabItem.image = tabItem.image
+            tabItem.titleColor = this.unselectedColor
+            tabItem.visibility = 'hidden'
+          }
+        }
+      }
+    }
+  }
+</script>
 
 <style>
   .wrapper {
@@ -48,49 +103,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 88px;
+    height: 108px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #C0BFC4;
   }
 </style>
-
-<script>
-  export default {
-    name: 'OWTabbar',
-    props: {
-      tabItems: {default: []},
-      selectedColor: {default: '#ff0000'},
-      unselectedColor: {default: '#000000'}
-    },
-    data () {
-      return {
-        selectedIndex: 0
-      }
-    },
-    components: {
-      tabitem: require('./OW-TabbarItem')
-    },
-    created () {
-      this.select(this.selectedIndex)
-    },
-    methods: {
-      tabItemOnClick (e) {
-        this.selectedIndex = e.index
-        this.select(e.index)
-        this.$emit('tabBarOnClick', e)
-      },
-      select (index) {
-        for (let i = 0; i < this.tabItems.length; i++) {
-          let tabItem = this.tabItems[i]
-          if (i == index) {
-            tabItem.icon = tabItem.selectedImage
-            tabItem.titleColor = this.selectedColor
-            tabItem.visibility = 'visible'
-          } else {
-            tabItem.icon = tabItem.image
-            tabItem.titleColor = this.unselectedColor
-            tabItem.visibility = 'hidden'
-          }
-        }
-      }
-    }
-  }
-</script>

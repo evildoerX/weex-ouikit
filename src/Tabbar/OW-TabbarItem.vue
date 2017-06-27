@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import { CIcon } from 'weex-Ouikit'
+  import CIcon  from '../icon/C-Icon.vue'
   export default {
     props: {
       index: {

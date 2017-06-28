@@ -1,11 +1,14 @@
 .page-container {
   width: 750px;
   position: absolute;
-  bottom: 108px;
+
 }
 .page-container-normal {
   top: 92px;
 }
 .page-container-iOS {
   top: 132px;
+}
+.page-container-Web {
+  bottom: 108px;
 }

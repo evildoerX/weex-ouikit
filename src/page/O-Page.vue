@@ -11,6 +11,7 @@ export default {
       let type = WXEnvironment.platform
       return [
         type === 'iOS' ? `page-container-iOS` : `page-container-normal`,
+        type === 'Web' ? `page-container-Web` : ``,
       ]
     }
   }

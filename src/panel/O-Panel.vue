@@ -1,10 +1,10 @@
 <template>
   <div
     class="panel-container"
-    :style="{ height: `${height}px`}"
     @click="click"
     @longpress="longpress">
-    <div class="panel-content">
+    <div class="panel-content"
+    :class="panelcontentheight">
       <image
         v-if="Src"
         :src="Src"
@@ -41,10 +41,8 @@ export default {
     }
   },
   props: {
-    //导航条背景色
+    //背景色
     backgroundColor: { default: 'white' },
-    //导航条高度
-    height: { default: '' },
     //左侧按钮图片
     Src: { default: '' },
     //左侧按钮标题
@@ -76,10 +74,9 @@ export default {
     }
   },
   computed: {
-    lefttext () {
+    panelcontentheight () {
       return [
-        this.Src ? `left-textA` : `left-text`,
-        this.Disabled ? `Disabled` : ``
+        !this.Src && this.footer? `panelcontent_heightA` : `panelcontent_height`,
       ]
     },
     disctext () {

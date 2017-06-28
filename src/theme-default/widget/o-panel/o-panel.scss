@@ -1,17 +1,23 @@
 .panel-container {
     flex-direction: row;
-    padding-left: 30px;
     width: 750px;
     margin-top: -1px;
     padding-top: 30px;
+    padding-left: 30px;
     padding-right: 30px;
+  }
+  .panelcontent_height{
+    height: 150px;
 
+  }
+  .panelcontent_heightA {
+    height: 196px;
   }
   .panel-container:active {
     background-color: #ECECEC;
   }
   .panel-content {
-    // position: relative;
+    position: relative;
     flex-direction: row;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -27,6 +33,7 @@
   }
   .text-content {
     flex-direction: column;
+    justify-content: center;
   }
   .titletext {
     margin-bottom: 10px;

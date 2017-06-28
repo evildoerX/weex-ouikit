@@ -5,7 +5,7 @@
     :style="{ height: `${height}px`}"
     @click="click"
     @longpress="longpress">
-    <div class="content">
+    <div class="cell-content">
       <div class="left-content">
         <image
           v-if="Src"

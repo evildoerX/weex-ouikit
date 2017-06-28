@@ -1,4 +1,4 @@
-.container {
+.cell-container {
     flex-direction: row;
     padding-left: 30px;
     width: 750px;
@@ -7,7 +7,7 @@
   .container:active {
     background-color: #ECECEC;
   }
-  .cell-container {
+  .cell-content {
     position: relative;
     flex-direction: row;
     border-top-style: solid;

@@ -22,6 +22,7 @@ import OTabbarItem from './Tabbar/O-TabbarItem'
 import OWTabbar from './Tabbar/OW-Tabbar'
 import OWTabbarItem from './Tabbar/OW-TabbarItem.vue'
 import ONavbar from './navbar/O-Navbar'
+import OPage from './page/O-Page.vue'
 import OTabs from './Tab/Tabs'
 import OTab from './Tab/Tab'
 import ORater from './rater/Rater'
@@ -55,11 +56,12 @@ export {
 	OLoadingMore,
 	OTabbar,
 	OTabbarItem,
-  	OWTabbar,
+  OWTabbar,
 	OWTabbarItem,
 	ONavbar,
+  OPage,
 	OTab,
-  	OTabs,
+  OTabs,
 	ORater,
 	OSwitch,
 	OInput,
@@ -94,6 +96,7 @@ Vue.component(OTabbarItem.name, OTabbarItem)
 Vue.component(OWTabbar.name, OWTabbar)
 Vue.component(OWTabbarItem.name, OWTabbarItem)
 Vue.component(ONavbar.name, ONavbar)
+Vue.component(OPage.name, OPage)
 Vue.component(OTabs.name, OTabs)
 Vue.component(OTab.name, OTab)
 Vue.component(OSwitch.name, OSwitch)

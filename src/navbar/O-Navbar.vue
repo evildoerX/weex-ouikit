@@ -37,39 +37,5 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
-.header {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 36px;
-  padding-right: 36px;
-  padding-bottom:6px;
-}
-.header-normal {
-  height: 92px;
-  padding-top:6px;
-}
-.header-iOS {
-  height: 132px;
-  padding-top:46px;
-}
-.bg-primary {
-  background-color: #35495e;
-}
-.left{
-  flex-direction: row;
-  flex: 1;
-}
-.right {
-  flex-direction: row;
-  justify-content: flex-end;
-  flex: 1;
-}
-.title {
-  flex: 3;
-  color: #fff;
-  font-size: 36px;
-  font-weight: 400;
-  text-align: center;
-}
+@import '../theme-default/widget/o-navbar/o-navbar.scss'
 </style>

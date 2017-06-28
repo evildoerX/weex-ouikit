@@ -42,7 +42,7 @@ export default {
   created () {
     domModule.addRule('fontFace', {
       'fontFamily': 'iconfont',
-      'src': "url('http://at.alicdn.com/t/font_f7jzrtqrz6o8byb9.ttf')"
+      'src': "url('http://at.alicdn.com/t/font_rlhwh5t0rj5uerk9.ttf')"
     })
   }
 }

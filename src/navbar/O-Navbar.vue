@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     iOSstat () {
-      let type = weex.config.platform
+      let type = WXEnvironment.platform
       console.log (type)
       return [
         type === 'iOS' ? `header-iOS` : `header-normal`,

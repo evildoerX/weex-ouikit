@@ -12,8 +12,6 @@ export default {
       const result = []
       if(type === 'iOS') {
           result.push(`page-container-iOS`)
-      }if(type === 'Web') {
-        result.push(`page-container-Web`)
       }else{
           result.push(`page-container-normal`)
       }

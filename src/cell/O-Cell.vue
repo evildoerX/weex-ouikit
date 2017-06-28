@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container"
+    class="cell-container"
     :class="cellstyle"
     :style="{ height: `${height}px`}"
     @click="click"

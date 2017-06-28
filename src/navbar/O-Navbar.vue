@@ -1,6 +1,6 @@
 <!-- 右侧icon相距20px -->
 <template>
-  <div class="header" :class="['bg-' + type]" :style="bg?{'background-color':bg}:{}">
+  <div class="header" :class="iOSstat" :style="bg?{'background-color':bg}:{}">
     <div class="left">
       <text v-if="!$slots.left">&nbsp;</text>
       <slot name="left"></slot>
@@ -24,6 +24,15 @@ export default {
     title: {
       default: ''
     }
+  },
+  computed: {
+    iOSstat () {
+      let type = weex.config.platform
+      console.log (type)
+      return [
+        type === 'iOS' ? `header-iOS` : `header-normal`,
+      ]
+    }
   }
 }
 </script>
@@ -32,11 +41,17 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 92px;
   padding-left: 36px;
   padding-right: 36px;
-  padding-top:6px;
   padding-bottom:6px;
+}
+.header-normal {
+  height: 92px;
+  padding-top:6px;
+}
+.header-iOS {
+  height: 112px;
+  padding-top:26px;
 }
 .bg-primary {
   background-color: #35495e;

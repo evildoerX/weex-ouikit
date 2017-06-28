@@ -9,10 +9,15 @@ export default {
   computed: {
     pageiOSstata () {
       let type = WXEnvironment.platform
-      return [
-        type === 'iOS' ? `page-container-iOS` : `page-container-normal`,
-        type === 'Web' ? `page-container-Web` : ``,
-      ]
+      const result = []
+      if(type === 'iOS') {
+          result.push(`page-container-iOS`)
+      }if(type === 'Web') {
+        result.push(`page-container-Web`)
+      }else{
+          result.push(`page-container-normal`)
+      }
+      return result
     }
   }
 }

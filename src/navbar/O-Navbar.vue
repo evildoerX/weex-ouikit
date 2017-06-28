@@ -50,8 +50,8 @@ export default {
   padding-top:6px;
 }
 .header-iOS {
-  height: 112px;
-  padding-top:26px;
+  height: 132px;
+  padding-top:46px;
 }
 .bg-primary {
   background-color: #35495e;

@@ -1,12 +1,14 @@
 <!-- 右侧icon相距20px -->
 <template>
-  <div class="header" :class="iOSstat" :style="bg?{'background-color':bg}:{}">
-    <div class="left">
+  <div class="o-navbar-content"
+  :class="iOSstat"
+  :style="{'background-color':bgcolor}">
+    <div class="o-navbar-left">
       <text v-if="!$slots.left">&nbsp;</text>
       <slot name="left"></slot>
     </div>
-    <text class="title">{{title}}</text>
-    <div class="right">
+    <text class="o-navbar-title">{{title}}</text>
+    <div class="o-navbar-right ">
       <text v-if="!$slots.right">&nbsp;</text>
       <slot v-else name="right"></slot>
     </div>
@@ -16,11 +18,10 @@
 export default {
   name: 'ONavbar',
   props: {
-    type: {
+    bgcolor: {
       type: String,
-      default: 'primary'
+      default: '#35495e'
     },
-    bg: String,
     title: {
       default: ''
     }
@@ -30,7 +31,7 @@ export default {
       let type = WXEnvironment.platform
       console.log (type)
       return [
-        type === 'iOS' ? `header-iOS` : `header-normal`,
+        type === 'iOS' ? `o-navbar-content-iOS` : `o-navbar-content-normal`,
       ]
     }
   }

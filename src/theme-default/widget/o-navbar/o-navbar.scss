@@ -1,4 +1,4 @@
-.header {
+.o-navbar-content {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -6,27 +6,24 @@
   padding-right: 36px;
   padding-bottom:6px;
 }
-.header-normal {
+.o-navbar-content-normal {
   height: 92px;
   padding-top:6px;
 }
-.header-iOS {
+.o-navbar-content-iOS {
   height: 132px;
   padding-top:46px;
 }
-.bg-primary {
-  background-color: #35495e;
-}
-.left{
+.o-navbar-left{
   flex-direction: row;
   flex: 1;
 }
-.right {
+.o-navbar-right {
   flex-direction: row;
   justify-content: flex-end;
   flex: 1;
 }
-.title {
+.o-navbar-title {
   flex: 3;
   color: #fff;
   font-size: 36px;

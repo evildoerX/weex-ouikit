@@ -1,5 +1,5 @@
 {
-  "AppName":"WeexUIKit",
+  "AppName":"WeexOUIKit",
   "AppId":"com.alibaba.weex",
   "SplashText":"Hello Weex UI Kit",
   "WeexBundle":"app.weex.js"

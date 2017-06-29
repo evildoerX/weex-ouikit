@@ -2,6 +2,9 @@
   "name": "weex-Ouikit",
   "version": "0.0.34",
   "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "keywords": [
     "vue",
     "weex",

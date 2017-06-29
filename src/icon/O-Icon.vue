@@ -9,7 +9,7 @@ export default {
   props: {
     size: {
       type: String,
-      default: '34px'
+      default: '55px'
     },
     color: {
       type: String,

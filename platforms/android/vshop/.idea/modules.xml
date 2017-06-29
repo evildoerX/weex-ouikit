@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../farwolf/farwolf.iml" filepath="$PROJECT_DIR$/../farwolf/farwolf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../farwolf.business/farwolf.business.iml" filepath="$PROJECT_DIR$/../farwolf.business/farwolf.business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../farwolf.weex/farwolf.weex.iml" filepath="$PROJECT_DIR$/../farwolf.weex/farwolf.weex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../galleryfinal/galleryfinal.iml" filepath="$PROJECT_DIR$/../galleryfinal/galleryfinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sdk/sdk.iml" filepath="$PROJECT_DIR$/../sdk/sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vshop.iml" filepath="$PROJECT_DIR$/vshop.iml" />
+    </modules>
+  </component>
+</project>

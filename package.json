@@ -1,6 +1,6 @@
 {
   "name": "weex-Ouikit",
-  "version": "0.0.40",
+  "version": "0.0.41",
   "main": "src/index.js",
   "files": [
     "src"

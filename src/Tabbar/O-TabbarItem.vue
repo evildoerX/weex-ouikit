@@ -94,22 +94,5 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
-.tabbar-item {
-  flex: 1;
-  height: 108px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-image {
-  width: 54px;
-  height: 54px;
-  margin-bottom: 5px;
-}
-
-.text {
-  font-size: 20px;
-  text-align: center;
-}
+@import '../theme-default/widget/o-tabbar/o-tabbaritem'
 </style>

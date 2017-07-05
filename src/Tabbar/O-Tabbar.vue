@@ -81,14 +81,5 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
-.tabbar {
-  position: fixed;
-  flex-direction: row;
-  align-items: center;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  border-top-style: solid;
-  border-top-width: 1px;
-}
+@import '../theme-default/widget/o-tabbar/o-tabbar'
 </style>

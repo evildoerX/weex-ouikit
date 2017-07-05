@@ -26,7 +26,9 @@
       @naviBarRightItemClickS="naviBarRightItemClickS"
       @naviBarLeftItemClick="naviBarLeftItemClick"></osnavbar>
       <div class="onavpageWrapper" :class="onavpageinit" :style="{top:`${navpagetop}px`,bottom:`${navpagebottom}px`}">
-        <slot></slot>
+        <scroller>
+          <slot></slot>
+        </scroller>
       </div>
   </div>
 </template>

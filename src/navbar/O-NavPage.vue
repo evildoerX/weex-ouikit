@@ -25,7 +25,7 @@
       @naviBarRightItemClick="naviBarRightItemClick"
       @naviBarRightItemClickS="naviBarRightItemClickS"
       @naviBarLeftItemClick="naviBarLeftItemClick"></osnavbar>
-      <div class="onavpageWrapper" :class="onavpageinit" :style="{top:`${navpagetop}px`,bottom:`${navpagebottom}px`}">
+      <div class="onavpageWrapper" :class="onavpageinit" :style="{top:`${navpagetop}px`,bottom:`${navpagebottom}px`,backgroundColor: pageWrapperColor}">
         <scroller>
           <slot></slot>
         </scroller>
@@ -49,6 +49,9 @@
       }
     },
     props: {
+      pageWrapperColor: {
+        default: '#f4f4f4'
+      },
       // navbar
       dataRole: {
         default: 'none'
